@@ -163,16 +163,25 @@ def export(source, destination):
             full_name = title_name(first_name)
             if last_name:
                 full_name += " " + title_name(last_name)
+            line_height = min(
+                rows.get(first_row, DEFAULT_ROW_HEIGHT),
+                rows.get(last_row, DEFAULT_ROW_HEIGHT),
+            )
             people.append({
                 "id": str(first_row) + "-" + str(column),
                 "name": full_name,
                 "first_name": title_name(first_name),
                 "last_name": title_name(last_name),
                 "row": first_row,
+                "last_name_row": last_row,
                 "column": column,
                 "x": (column - 1) * COLUMN_WIDTH,
                 "y": y_at(first_row) + rows.get(first_row, DEFAULT_ROW_HEIGHT) / 2,
+                "last_name_y": y_at(last_row) + rows.get(last_row, DEFAULT_ROW_HEIGHT) / 2,
                 "width": span * COLUMN_WIDTH,
+                "first_name_height": rows.get(first_row, DEFAULT_ROW_HEIGHT),
+                "last_name_height": rows.get(last_row, DEFAULT_ROW_HEIGHT),
+                "font_size": round(min(11, line_height * 0.72), 2),
             })
 
     labels = [

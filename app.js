@@ -123,10 +123,11 @@ function drawChart(data) {
 
     const first = svgElement("text", {
       x: person.x + person.width / 2,
-      y: person.y - 2,
+      y: person.y + person.font_size * 0.39,
       "text-anchor": "middle",
       class: "person-first-name",
       "data-max-width": nameWidth,
+      "font-size": person.font_size,
     });
     first.textContent = person.first_name;
     group.append(first);
@@ -134,10 +135,11 @@ function drawChart(data) {
     if (person.last_name) {
       const last = svgElement("text", {
         x: person.x + person.width / 2,
-        y: person.y + 14,
+        y: person.last_name_y + person.font_size * 0.39,
         "text-anchor": "middle",
         class: "person-last-name",
         "data-max-width": nameWidth,
+        "font-size": person.font_size,
       });
       last.textContent = person.last_name;
       group.append(last);
@@ -323,7 +325,7 @@ document.querySelector("#dialog-close").addEventListener("click", () => {
   document.querySelector("#photo-dialog").close();
 });
 
-fetch("data/tree.json")
+fetch("data/tree.json?v=names-fit-3")
   .then((response) => {
     if (!response.ok) throw new Error(`Could not load family chart data (${response.status}).`);
     return response.json();
