@@ -453,6 +453,7 @@ h2 {
 .family-tree {
   display: block;
   max-width: none;
+  margin-bottom: clamp(320px, 55vh, 600px);
   overflow: visible;
   transform-origin: top left;
 }
