@@ -103,6 +103,7 @@ function drawChart(data) {
     "font-size": 14,
   });
   for (const person of data.people) {
+    const nameWidth = Math.max(8, person.width - 12);
     const group = svgElement("g", {
       class: "tree-person",
       "data-person-id": person.id,
@@ -125,6 +126,7 @@ function drawChart(data) {
       y: person.y - 2,
       "text-anchor": "middle",
       class: "person-first-name",
+      "data-max-width": nameWidth,
     });
     first.textContent = person.first_name;
     group.append(first);
@@ -135,6 +137,7 @@ function drawChart(data) {
         y: person.y + 14,
         "text-anchor": "middle",
         class: "person-last-name",
+        "data-max-width": nameWidth,
       });
       last.textContent = person.last_name;
       group.append(last);
@@ -152,6 +155,14 @@ function drawChart(data) {
     peopleGroup.append(group);
   }
   svg.append(peopleGroup);
+  for (const name of peopleGroup.querySelectorAll(".person-first-name, .person-last-name")) {
+    const maxWidth = Number(name.dataset.maxWidth);
+    const measuredWidth = name.getComputedTextLength();
+    if (measuredWidth > 0 && measuredWidth > maxWidth) {
+      name.setAttribute("textLength", String(maxWidth));
+      name.setAttribute("lengthAdjust", "spacingAndGlyphs");
+    }
+  }
   status.hidden = true;
   setZoom(BASE_ZOOM);
   updatePersonStyles();
