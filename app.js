@@ -12,8 +12,10 @@ const zoomLabel = document.querySelector("#zoom-label");
 const personCard = document.querySelector("#person-card");
 const personName = document.querySelector("#person-name");
 const personSource = document.querySelector("#person-source");
+const personPhotoGrid = document.querySelector("#person-photo-grid");
 
 let chartData;
+let photosByPerson = {};
 let zoom = BASE_ZOOM;
 let selectedPersonId = null;
 let matchingIds = new Set();
@@ -47,8 +49,9 @@ function setZoom(value, focusX, focusY) {
   }
 }
 
-function drawChart(data) {
+function drawChart(data, photos) {
   chartData = data;
+  photosByPerson = photos;
   document.querySelector("#people-summary").textContent =
     `${data.people.length} names transcribed from the family’s full-tree spreadsheet`;
   svg.setAttribute("viewBox", `0 0 ${data.width} ${data.height}`);
@@ -186,6 +189,8 @@ function selectPerson(id, center) {
   personName.textContent = person.name;
   personSource.textContent = `Original chart · row ${person.row}, column ${person.column}`;
   personCard.hidden = false;
+  renderPersonPhotos(person.id);
+  personCard.scrollIntoView({ behavior: "smooth", block: "start" });
   searchResults.hidden = true;
   updatePersonStyles();
 
@@ -197,6 +202,39 @@ function selectPerson(id, center) {
       top: Math.max(0, y - viewport.clientHeight / 2),
       behavior: "smooth",
     });
+  }
+}
+
+function renderPersonPhotos(id) {
+  const photos = photosByPerson[id] || [];
+  personPhotoGrid.replaceChildren();
+
+  if (photos.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "person-photo-empty";
+    empty.textContent = "No photos matched this name in the family gallery.";
+    personPhotoGrid.append(empty);
+    return;
+  }
+
+  for (const photo of photos) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "person-photo";
+    button.dataset.photo = photo.src;
+    button.dataset.alt = photo.filename;
+    button.setAttribute("aria-label", `Open photo: ${photo.filename}`);
+
+    const image = document.createElement("img");
+    image.src = photo.thumbnail;
+    image.alt = "";
+    image.loading = "lazy";
+
+    const caption = document.createElement("span");
+    caption.textContent = photo.filename;
+    button.append(image, caption);
+    button.addEventListener("click", () => openPhotograph(button));
+    personPhotoGrid.append(button);
   }
 }
 
@@ -325,13 +363,17 @@ document.querySelector("#dialog-close").addEventListener("click", () => {
   document.querySelector("#photo-dialog").close();
 });
 
-fetch("data/tree.json?v=names-fit-3")
-  .then((response) => {
-    if (!response.ok) throw new Error(`Could not load family chart data (${response.status}).`);
-    return response.json();
+Promise.all([
+  fetch("data/tree.json?v=names-fit-3"),
+  fetch("data/person-photos.json", { cache: "no-cache" }),
+])
+  .then(async ([treeResponse, photosResponse]) => {
+    if (!treeResponse.ok) throw new Error(`Could not load family chart data (${treeResponse.status}).`);
+    if (!photosResponse.ok) throw new Error(`Could not load matched family photos (${photosResponse.status}).`);
+    const [tree, photoData] = await Promise.all([treeResponse.json(), photosResponse.json()]);
+    drawChart(tree, photoData.photos);
   })
-  .then(drawChart)
   .catch((error) => {
-    status.textContent = "The family chart could not be loaded. Please refresh the page.";
+    status.textContent = "The family chart or matched photos could not be loaded. Please refresh the page.";
     console.error(error);
   });

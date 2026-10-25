@@ -1,5 +1,6 @@
 .DS_Store
 __pycache__/
 docs/
+/steiner_gallery/
 /tree_steiner_*.jpeg
 node_modules/

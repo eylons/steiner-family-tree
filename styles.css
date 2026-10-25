@@ -543,14 +543,17 @@ h2 {
 }
 
 .person-card {
-  display: flex;
-  align-items: center;
-  gap: 13px;
   margin-top: 11px;
   padding: 15px 18px;
   border: 1px solid #d8ded7;
   border-radius: 5px;
   background: #eef2ec;
+}
+
+.person-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
 }
 
 .person-card-icon {
@@ -566,6 +569,7 @@ h2 {
 }
 
 .person-card-content {
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -603,6 +607,72 @@ h2 {
   color: #747b72;
   font-size: 20px;
   cursor: pointer;
+}
+
+.person-photos {
+  margin: 17px 0 0 47px;
+  padding-top: 14px;
+  border-top: 1px solid #d8ded7;
+}
+
+.person-photos h4 {
+  margin: 0 0 10px;
+  color: #68736a;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.person-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  gap: 10px;
+}
+
+.person-photo {
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #d8ded7;
+  border-radius: 4px;
+  background: #fbfaf6;
+  color: #555f57;
+  text-align: left;
+  cursor: zoom-in;
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+.person-photo:hover {
+  border-color: #8da296;
+  transform: translateY(-2px);
+}
+
+.person-photo img {
+  width: 100%;
+  height: 112px;
+  display: block;
+  object-fit: cover;
+  background: #e6e2d8;
+}
+
+.person-photo span {
+  display: -webkit-box;
+  min-height: 33px;
+  padding: 6px 7px;
+  overflow: hidden;
+  font-size: 9px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.person-photo-empty {
+  margin: 0;
+  color: #72786f;
+  font-size: 11px;
+  line-height: 1.5;
 }
 
 .close-person:hover {

@@ -12,6 +12,10 @@ The four complete source photographs are joined left-to-right in their numbered 
 swift scripts/stitch_photos.swift
 ```
 
+## Match gallery photos to people
+
+On macOS, run `python3 scripts/import_person_photos.py` to match clearly named photos in `steiner_gallery/` to people in `data/tree.json`. The script copies only matched photos into the published assets, creates smaller thumbnails, and writes `data/person-photos.json`. Names that cannot be identified confidently from their filenames are left unassigned. Select a person in the chart to view their matched photos.
+
 ## Preview locally
 
 From the project folder, run:

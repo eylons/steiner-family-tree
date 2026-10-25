@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#f6f3ec">
     <meta name="description" content="Explore the Steiner family tree, transcribed from the family chart and photographs.">
     <title>The Steiner Family Archive</title>
-    <link rel="stylesheet" href="styles.css?v=tree-scroll-1">
-    <script src="app.js?v=names-fit-3" defer></script>
+    <link rel="stylesheet" href="styles.css?v=person-photos-1">
+    <script src="app.js?v=person-photos-1" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -90,13 +90,19 @@
         </div>
 
         <aside class="person-card" id="person-card" aria-live="polite" hidden>
-          <div class="person-card-icon" aria-hidden="true">✳</div>
-          <div class="person-card-content">
-            <p class="person-card-label">Selected from the family chart</p>
-            <h3 id="person-name"></h3>
-            <p class="person-source" id="person-source"></p>
+          <div class="person-card-heading">
+            <div class="person-card-icon" aria-hidden="true">✳</div>
+            <div class="person-card-content">
+              <p class="person-card-label">Selected from the family chart</p>
+              <h3 id="person-name"></h3>
+              <p class="person-source" id="person-source"></p>
+            </div>
+            <button class="close-person" id="close-person" type="button" aria-label="Clear selected person">×</button>
           </div>
-          <button class="close-person" id="close-person" type="button" aria-label="Clear selected person">×</button>
+          <section class="person-photos" id="person-photos" aria-labelledby="person-photos-title">
+            <h4 id="person-photos-title">Photos</h4>
+            <div class="person-photo-grid" id="person-photo-grid"></div>
+          </section>
         </aside>
       </section>
 
