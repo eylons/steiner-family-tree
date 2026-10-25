@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f3ec">
+    <meta name="description" content="Explore the Steiner family tree, transcribed from the family chart and photographs.">
+    <title>The Steiner Family Archive</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="The Steiner Family Archive home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-name">The Steiner <span>Family Archive</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#tree">Family tree</a>
+        <a href="#photographs">Photographs</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A family history, kept together</p>
+          <h1>Every branch has<br>a story to tell.</h1>
+          <p class="intro-description">
+            Explore generations of the Steiner family through the chart and photographs
+            preserved by the family.
+          </p>
+          <a class="text-link" href="#tree">Explore the tree <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="intro-note" aria-label="About this archive">
+          <div class="note-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 40V20M24 28 13 17M24 31l12-12M24 20l-1-11M13 17l-5 2M13 17l1-6M36 19l5-2M36 19l-1-6M23 9l-5-3M23 9l5-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 40h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p class="note-title">A living record</p>
+          <p class="note-copy">Names and connections are shown as they appear in the family’s original chart.</p>
+          <span class="note-rule"></span>
+          <p class="note-foot">Chart · photographs · family memory</p>
+        </div>
+      </section>
+
+      <section class="tree-section" id="tree">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-kicker">The family chart</p>
+            <h2>Follow the branches</h2>
+          </div>
+          <p class="section-description">Search a name, select a person, or move around the original chart.</p>
+        </div>
+
+        <div class="tree-toolbar">
+          <div class="search-wrap">
+            <label class="visually-hidden" for="person-search">Search names in the family tree</label>
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.8" cy="10.8" r="6.4"></circle>
+              <path d="m15.5 15.5 4.2 4.2"></path>
+            </svg>
+            <input id="person-search" type="search" placeholder="Find someone in the tree…" autocomplete="off" aria-describedby="search-help">
+            <span class="search-shortcut" aria-hidden="true">⌘ K</span>
+            <div class="search-results" id="search-results" role="listbox" aria-label="Matching people" hidden></div>
+          </div>
+          <span id="search-help" class="visually-hidden">Search by first name or family name.</span>
+          <div class="toolbar-actions">
+            <span class="zoom-label" id="zoom-label">70%</span>
+            <button class="icon-button" id="zoom-out" type="button" aria-label="Zoom out" title="Zoom out">−</button>
+            <button class="icon-button" id="zoom-in" type="button" aria-label="Zoom in" title="Zoom in">+</button>
+            <button class="fit-button" id="fit-chart" type="button">Reset view</button>
+          </div>
+        </div>
+
+        <div class="tree-frame">
+          <div class="tree-viewport" id="tree-viewport" tabindex="0" aria-label="Scrollable family tree chart">
+            <svg id="family-tree" class="family-tree" role="group" aria-roledescription="interactive family tree" aria-labelledby="tree-title tree-description">
+              <title id="tree-title">The Steiner family tree</title>
+              <desc id="tree-description">An interactive rendering of the original family tree chart. Select a name to see its source location.</desc>
+            </svg>
+            <div class="tree-loading" id="tree-status" role="status">Preparing the family chart…</div>
+          </div>
+          <div class="tree-caption">
+            <span><span class="caption-dot"></span> <span id="people-summary">Transcribed from the family’s full-tree spreadsheet</span></span>
+            <span>Drag the chart or use the search to find a branch</span>
+          </div>
+        </div>
+
+        <aside class="person-card" id="person-card" aria-live="polite" hidden>
+          <div class="person-card-icon" aria-hidden="true">✳</div>
+          <div class="person-card-content">
+            <p class="person-card-label">Selected from the family chart</p>
+            <h3 id="person-name"></h3>
+            <p class="person-source" id="person-source"></p>
+          </div>
+          <button class="close-person" id="close-person" type="button" aria-label="Clear selected person">×</button>
+        </aside>
+      </section>
+
+      <section class="photo-section" id="photographs">
+        <div class="section-heading photo-heading">
+          <div>
+            <p class="eyebrow section-kicker">The original pages</p>
+            <h2>See the chart as it was kept</h2>
+          </div>
+          <p class="section-description">Open a photograph to zoom in on the handwritten family record.</p>
+        </div>
+        <div class="photo-grid">
+          <button class="photo-card" type="button" data-photo="assets/photos/tree_steiner_1.jpeg" data-alt="First photograph of the handwritten Steiner family tree">
+            <span class="photo-image"><img src="assets/photos/tree_steiner_1.jpeg" alt="" loading="lazy"></span>
+            <span class="photo-info"><span class="photo-number">01</span><span>Original chart <span class="photo-hint">Open photograph ↗</span></span></span>
+          </button>
+          <button class="photo-card" type="button" data-photo="assets/photos/tree_steiner_2.jpeg" data-alt="Second photograph of the handwritten Steiner family tree">
+            <span class="photo-image"><img src="assets/photos/tree_steiner_2.jpeg" alt="" loading="lazy"></span>
+            <span class="photo-info"><span class="photo-number">02</span><span>Original chart <span class="photo-hint">Open photograph ↗</span></span></span>
+          </button>
+          <button class="photo-card" type="button" data-photo="assets/photos/tree_steiner_3.jpeg" data-alt="Third photograph of the handwritten Steiner family tree">
+            <span class="photo-image"><img src="assets/photos/tree_steiner_3.jpeg" alt="" loading="lazy"></span>
+            <span class="photo-info"><span class="photo-number">03</span><span>Original chart <span class="photo-hint">Open photograph ↗</span></span></span>
+          </button>
+          <button class="photo-card" type="button" data-photo="assets/photos/tree_steiner_4.jpeg" data-alt="Fourth photograph of the handwritten Steiner family tree">
+            <span class="photo-image"><img src="assets/photos/tree_steiner_4.jpeg" alt="" loading="lazy"></span>
+            <span class="photo-info"><span class="photo-number">04</span><span>Original chart <span class="photo-hint">Open photograph ↗</span></span></span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-name">The Steiner <span>Family Archive</span></span>
+      </a>
+      <p>Made with care from the family’s own records.</p>
+    </footer>
+
+    <dialog class="photo-dialog" id="photo-dialog" aria-label="Family tree photograph">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close photograph">×</button>
+      <img id="dialog-image" alt="">
+      <p id="dialog-caption"></p>
+    </dialog>
+  </body>
+</html>
