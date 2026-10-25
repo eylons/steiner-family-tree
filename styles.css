@@ -617,6 +617,78 @@ h2 {
   margin-bottom: 23px;
 }
 
+.panorama-wrap {
+  margin-bottom: 19px;
+  overflow: hidden;
+  border: 1px solid #ded8ca;
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.panorama-image-button {
+  width: 100%;
+  min-height: 150px;
+  display: grid;
+  place-items: center;
+  padding: 14px;
+  border: 0;
+  background:
+    radial-gradient(#d8d2c4 0.55px, transparent 0.55px) 0 0 / 17px 17px,
+    #fbfaf6;
+  cursor: zoom-in;
+}
+
+.panorama-image-button img {
+  width: 100%;
+  max-height: 330px;
+  display: block;
+  object-fit: contain;
+}
+
+.panorama-info {
+  min-height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 12px 16px;
+  border-top: 1px solid #e2ddd2;
+}
+
+.panorama-title {
+  margin: 0 0 4px;
+  color: #38413a;
+  font-family: var(--serif);
+  font-size: 15px;
+}
+
+.panorama-description {
+  margin: 0;
+  color: #777a72;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.panorama-download {
+  flex: 0 0 auto;
+  padding: 9px 12px;
+  border: 1px solid #d5ddd4;
+  border-radius: 4px;
+  background: #eef2ec;
+  color: var(--green-dark);
+  font-size: 10px;
+  font-weight: 650;
+  transition: background 150ms ease;
+}
+
+.panorama-download:hover {
+  background: #e0e9df;
+}
+
+.panorama-download span {
+  margin-left: 5px;
+}
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -849,6 +921,21 @@ h2 {
 
   .photo-section {
     padding: 45px 0 52px;
+  }
+
+  .panorama-image-button {
+    min-height: 85px;
+    padding: 8px;
+  }
+
+  .panorama-image-button img {
+    max-height: 180px;
+  }
+
+  .panorama-info {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12px;
   }
 
   .photo-grid {

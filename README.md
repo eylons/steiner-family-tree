@@ -4,6 +4,14 @@ A static, interactive family-chart website built from the family’s chart sprea
 
 The planned GitHub Pages deployment is public, as requested. The source workbook and other documents in `docs/` are not included in the published repository.
 
+## Stitch the original photographs
+
+The four complete source photographs are joined left-to-right in their numbered order as `assets/photos/steiner-family-tree-panorama.jpeg`. To recreate the panorama after updating the photos, run this script on macOS:
+
+```sh
+swift scripts/stitch_photos.swift
+```
+
 ## Preview locally
 
 From the project folder, run:

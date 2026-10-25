@@ -305,7 +305,7 @@ function finishDragging() {
 }
 viewport.addEventListener("pointerup", finishDragging);
 viewport.addEventListener("pointercancel", finishDragging);
-for (const button of document.querySelectorAll(".photo-card")) {
+for (const button of document.querySelectorAll(".photo-card, .panorama-image-button")) {
   button.addEventListener("click", () => openPhotograph(button));
 }
 document.querySelector("#dialog-close").addEventListener("click", () => {
