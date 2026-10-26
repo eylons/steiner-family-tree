@@ -125,21 +125,24 @@ function drawChart(data, photos) {
     "font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
     "font-size": 14,
   });
+  const showPersonCards = data.person_cards === true;
   for (const person of data.people) {
-    const nameWidth = Math.max(8, person.width - 12);
+    const nameWidth = Math.max(8, person.width - (showPersonCards ? 18 : 12));
     const group = svgElement("g", {
-      class: "tree-person",
+      class: showPersonCards ? "tree-person has-person-card" : "tree-person",
       "data-person-id": person.id,
       tabindex: "0",
       role: "button",
       "aria-label": `Select ${person.name}`,
     });
     const hitArea = svgElement("rect", {
-      x: person.x - 5,
-      y: person.y - 14,
-      width: Math.max(person.width + 10, 44),
-      height: 35,
-      rx: 3,
+      x: person.x - (showPersonCards ? 10 : 5),
+      y: person.y - (showPersonCards ? 27 : 14),
+      width: Math.max(person.width + (showPersonCards ? 20 : 10), 44),
+      height: showPersonCards
+        ? (person.last_name ? 64 : 42)
+        : 35,
+      rx: showPersonCards ? 5 : 3,
       class: "person-hit-area",
     });
     group.append(hitArea);

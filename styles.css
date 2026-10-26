@@ -510,6 +510,17 @@ h2 {
   pointer-events: all;
 }
 
+.tree-person.has-person-card .person-hit-area {
+  fill: #fffefa;
+  stroke: #b9c4b9;
+  stroke-width: 1.3px;
+}
+
+.tree-person.has-person-card:hover .person-hit-area {
+  fill: #f1f5ef;
+  stroke: #7f9988;
+}
+
 .tree-person text {
   fill: #35463d;
   font-weight: 600;
