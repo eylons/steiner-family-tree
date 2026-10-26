@@ -7,7 +7,7 @@
     <meta name="description" content="Explore the Steiner family tree, transcribed from the family chart and photographs.">
     <title>The Steiner Family Archive</title>
     <link rel="stylesheet" href="styles.css?v=feigin-source-charts-1">
-    <script src="app.js?v=tree-return-scroll-1" defer></script>
+    <script src="app.js?v=chart-identity-and-scroll-1" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -115,6 +115,11 @@
           <section class="person-details" id="person-details" aria-labelledby="person-details-title" hidden>
             <h4 id="person-details-title">Family details</h4>
             <dl class="person-facts" id="person-facts"></dl>
+          </section>
+          <section class="person-related" id="person-chart-link" hidden>
+            <h4>Same person in another chart</h4>
+            <p id="person-chart-link-description"></p>
+            <button class="related-tree-button" id="open-linked-chart" type="button"></button>
           </section>
           <section class="person-related" id="person-related" hidden>
             <h4>Related family tree</h4>

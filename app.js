@@ -2,6 +2,22 @@ const SVG_NS = "http://www.w3.org/2000/svg";
 const BASE_ZOOM = 0.7;
 const MIN_ZOOM = 0.35;
 const MAX_ZOOM = 1.8;
+const PERSON_CHART_LINKS = {
+  "41-18": {
+    canonicalId: "41-18",
+    linkedPersonId: "more-steiner-19-30",
+    linkedTreeId: "more-steiner",
+    linkedTreeLabel: "Additional Steiner chart",
+    alternateName: "Juda Steiner",
+  },
+  "more-steiner-19-30": {
+    canonicalId: "41-18",
+    linkedPersonId: "41-18",
+    linkedTreeId: "steiner",
+    linkedTreeLabel: "Steiner family chart",
+    alternateName: "Jehuda Steiner",
+  },
+};
 
 const viewport = document.querySelector("#tree-viewport");
 const svg = document.querySelector("#family-tree");
@@ -18,6 +34,9 @@ const personFacts = document.querySelector("#person-facts");
 const personRelated = document.querySelector("#person-related");
 const relatedTreeNotice = document.querySelector("#related-tree-notice");
 const relatedTreeButton = document.querySelector("#open-related-tree");
+const personChartLink = document.querySelector("#person-chart-link");
+const personChartLinkDescription = document.querySelector("#person-chart-link-description");
+const personChartLinkButton = document.querySelector("#open-linked-chart");
 const treeViewSelect = document.querySelector("#tree-view-select");
 const relatedTreeDescription = document.querySelector("#related-tree-description");
 
@@ -82,7 +101,7 @@ function drawChart(data, photos) {
         ...mobileLayout.people[person.id],
       })),
     }
-    : data;
+    : { ...data };
   const title = svgElement("title", { id: "tree-title" });
   title.textContent = layoutData.title || "The Steiner family tree";
   const description = svgElement("desc", { id: "tree-description" });
@@ -91,6 +110,11 @@ function drawChart(data, photos) {
   svg.replaceChildren(title, description);
   chartData = layoutData;
   photosByPerson = photos;
+  layoutData.width = Math.max(
+    layoutData.width,
+    ...layoutData.people.map((person) => person.x + person.width + 42),
+    ...layoutData.lines.map((line) => Math.max(line.x1, line.x2) + 42),
+  );
   document.querySelector("#people-summary").textContent =
     layoutData.summary || `${layoutData.people.length} names transcribed from the family’s full-tree spreadsheet`;
   svg.classList.toggle("is-compact-tree", layoutData.compact_chart === true);
@@ -228,13 +252,23 @@ function updatePersonStyles() {
 function selectPerson(id, center, scrollToCard = true) {
   const person = chartData.people.find((candidate) => candidate.id === id);
   if (!person) return;
+  const chartLink = PERSON_CHART_LINKS[person.id];
+  const identityId = chartLink?.canonicalId || person.id;
   selectedPersonId = person.id;
-  personName.textContent = person.name;
+  personName.textContent = chartLink
+    ? `${person.name} (also known as ${chartLink.alternateName})`
+    : person.name;
   personSource.textContent = person.source_label
     || `Original chart · row ${person.row}, column ${person.column}`;
   personCard.hidden = false;
-  renderPersonDetails(person);
-  renderPersonPhotos(person.id);
+  renderPersonDetails({ ...person, id: identityId });
+  renderPersonPhotos(identityId);
+  personChartLink.hidden = !chartLink;
+  if (chartLink) {
+    personChartLinkDescription.textContent =
+      `${person.name} is the same person as ${chartLink.alternateName} in the ${chartLink.linkedTreeLabel}.`;
+    personChartLinkButton.textContent = `View in the ${chartLink.linkedTreeLabel}`;
+  }
   if (scrollToCard) personCard.scrollIntoView({ behavior: "smooth", block: "start" });
   searchResults.hidden = true;
   updatePersonStyles();
@@ -387,7 +421,7 @@ function showTreeView(treeId, selectedId = null) {
     "steiner-list": steinerListTreeData,
     feigin: feiginTreeData,
   }[treeId];
-  const photos = treeId === "steiner" || treeId === "feigin" ? mainPhotosByPerson : {};
+  const photos = mainPhotosByPerson;
   drawChart(viewData, photos);
   viewport.scrollTo({ left: 0, top: 0, behavior: "smooth" });
   const hasRelatedView = treeId !== "steiner";
@@ -395,10 +429,11 @@ function showTreeView(treeId, selectedId = null) {
   relatedTreeDescription.textContent = treeId === "feigin"
     ? "Viewing the Feigin branch connected through Yael."
     : treeId === "more-steiner"
-      ? "Viewing the additional chart as a separate source; identities are not merged automatically."
+      ? "Viewing the additional chart as a separate source; Juda Steiner is linked to Jehuda Steiner in the full chart."
       : "Viewing the numbered source list as a separate branch; abbreviated names are not merged automatically.";
   personCard.hidden = true;
   selectedPersonId = null;
+  personChartLink.hidden = true;
   if (selectedId && viewData.people.some((person) => person.id === selectedId)) {
     selectPerson(selectedId, false, false);
   }
@@ -411,10 +446,17 @@ relatedTreeButton.addEventListener("click", () => {
   if (activeTreeId === "feigin") showTreeView("steiner", "50-9");
   else showTreeView("feigin", "50-9");
 });
+personChartLinkButton.addEventListener("click", () => {
+  const chartLink = PERSON_CHART_LINKS[selectedPersonId];
+  if (chartLink) showTreeView(chartLink.linkedTreeId, chartLink.linkedPersonId);
+});
 treeViewSelect.addEventListener("change", () => {
-  const selectedId = chartData.people.some((person) => person.id === selectedPersonId)
-    ? selectedPersonId
-    : null;
+  const chartLink = PERSON_CHART_LINKS[selectedPersonId];
+  const selectedId = chartLink?.linkedTreeId === treeViewSelect.value
+    ? chartLink.linkedPersonId
+    : chartData.people.some((person) => person.id === selectedPersonId)
+      ? selectedPersonId
+      : null;
   showTreeView(treeViewSelect.value, selectedId);
 });
 document.querySelector("#return-to-steiner-tree").addEventListener("click", () => {
@@ -446,6 +488,7 @@ document.addEventListener("keydown", (event) => {
 });
 viewport.addEventListener("pointerdown", (event) => {
   if (event.button !== 0) return;
+  viewport.setPointerCapture(event.pointerId);
   dragStart = {
     x: event.clientX,
     y: event.clientY,
@@ -472,6 +515,7 @@ function finishDragging() {
 }
 viewport.addEventListener("pointerup", finishDragging);
 viewport.addEventListener("pointercancel", finishDragging);
+viewport.addEventListener("lostpointercapture", finishDragging);
 for (const button of document.querySelectorAll(".photo-card, .panorama-image-button")) {
   button.addEventListener("click", () => openPhotograph(button));
 }
