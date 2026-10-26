@@ -419,6 +419,7 @@ treeViewSelect.addEventListener("change", () => {
 });
 document.querySelector("#return-to-steiner-tree").addEventListener("click", () => {
   showTreeView("steiner", "50-9");
+  document.querySelector("#tree").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 searchInput.addEventListener("input", () => renderResults(searchInput.value));
 searchInput.addEventListener("keydown", (event) => {
