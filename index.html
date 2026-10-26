@@ -6,8 +6,8 @@
     <meta name="theme-color" content="#f6f3ec">
     <meta name="description" content="Explore the Steiner family tree, transcribed from the family chart and photographs.">
     <title>The Steiner Family Archive</title>
-    <link rel="stylesheet" href="styles.css?v=original-charts-page-1">
-    <script src="app.js?v=idit-neuman-tree-link-1" defer></script>
+    <link rel="stylesheet" href="styles.css?v=neuman-chart-view-1">
+    <script src="app.js?v=neuman-tree-3" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -74,6 +74,7 @@
               <option value="more-steiner">Additional Steiner chart</option>
               <option value="steiner-list">Hermina Steiner family list</option>
               <option value="feigin">Feigin branch through Yael</option>
+              <option value="neuman-yosef-hay">Neuman-Yosef-Hay family tree</option>
             </select>
             <span class="zoom-label" id="zoom-label">70%</span>
             <button class="icon-button" id="zoom-out" type="button" aria-label="Zoom out" title="Zoom out">−</button>
@@ -123,12 +124,7 @@
           <section class="person-related" id="person-source-chart" hidden>
             <h4>Related family chart</h4>
             <p id="person-source-chart-description"></p>
-            <a
-              class="related-tree-button"
-              id="open-person-source-chart"
-              target="_blank"
-              rel="noopener"
-            ></a>
+            <button class="related-tree-button" id="open-person-source-chart" type="button"></button>
           </section>
           <section class="person-related" id="person-related" hidden>
             <h4>Related family tree</h4>

@@ -1,0 +1,480 @@
+{
+  "title": "The Neuman-Yosef-Hay family",
+  "summary": "Transcribed from the Geni Neuman-Yosef-Hay family chart. Dates are as printed. The chart draws no line to David or Rivka; their parents are placed from the surnames and the chart's layout.",
+  "person_cards": true,
+  "compact_chart": true,
+  "initial_zoom": 1.35,
+  "width": 1240,
+  "height": 800,
+  "people": [
+    {
+      "id": "neuman-david",
+      "name": "David Neuman",
+      "first_name": "David",
+      "last_name": "Neuman",
+      "x": 15,
+      "y": 95,
+      "last_name_y": 115,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-gitel",
+      "name": "Gitel Neuman",
+      "first_name": "Gitel",
+      "last_name": "Neuman",
+      "x": 215,
+      "y": 95,
+      "last_name_y": 115,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-karl-klinger",
+      "name": "Karl Klinger",
+      "first_name": "Karl",
+      "last_name": "Klinger",
+      "x": 435,
+      "y": 95,
+      "last_name_y": 115,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1868–1911"
+    },
+    {
+      "id": "neuman-elsa-klinger",
+      "name": "Elsa Klinger (Feigl)",
+      "first_name": "Elsa",
+      "last_name": "Klinger (Feigl)",
+      "x": 635,
+      "y": 95,
+      "last_name_y": 115,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1878–1944"
+    },
+    {
+      "id": "neuman-laszlo-rosenthal",
+      "name": "László Rosenthal",
+      "first_name": "László",
+      "last_name": "Rosenthal",
+      "x": 855,
+      "y": 95,
+      "last_name_y": 115,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1869–1952"
+    },
+    {
+      "id": "neuman-emma-rosenthal",
+      "name": "Emma Rosenthal (Roth)",
+      "first_name": "Emma",
+      "last_name": "Rosenthal (Roth)",
+      "x": 1055,
+      "y": 95,
+      "last_name_y": 115,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1879–1928"
+    },
+    {
+      "id": "neuman-avraham",
+      "name": "Avraham Fransaskois Neuman",
+      "first_name": "Avraham Fransaskois",
+      "last_name": "Neuman",
+      "x": 15,
+      "y": 255,
+      "last_name_y": 275,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-rachel",
+      "name": "Rachel Margareta Neuman",
+      "first_name": "Rachel Margareta",
+      "last_name": "Neuman",
+      "x": 215,
+      "y": 255,
+      "last_name_y": 275,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · c.1894–1951"
+    },
+    {
+      "id": "neuman-walter-klinger",
+      "name": "Walter Klinger",
+      "first_name": "Walter",
+      "last_name": "Klinger",
+      "x": 645,
+      "y": 255,
+      "last_name_y": 275,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1902–1963"
+    },
+    {
+      "id": "neuman-klari-rosenthal",
+      "name": "Klari Rosa Keller (Rosenthal)",
+      "first_name": "Klari Rosa",
+      "last_name": "Keller (Rosenthal)",
+      "x": 845,
+      "y": 255,
+      "last_name_y": 275,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1903–1972"
+    },
+    {
+      "id": "neuman-yosef",
+      "name": "Yosef Neuman",
+      "first_name": "Yosef",
+      "last_name": "Neuman",
+      "x": 355,
+      "y": 415,
+      "last_name_y": 435,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1926–1985"
+    },
+    {
+      "id": "neuman-suse-klinger",
+      "name": "Suse Gerda Neuman (Klinger)",
+      "first_name": "Suse Gerda",
+      "last_name": "Neuman (Klinger)",
+      "x": 555,
+      "y": 415,
+      "last_name_y": 435,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1927–1951"
+    },
+    {
+      "id": "neuman-eliyahu",
+      "name": "Eliyahu Yosef-Hay",
+      "first_name": "Eliyahu",
+      "last_name": "Yosef-Hay",
+      "x": 855,
+      "y": 415,
+      "last_name_y": 435,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-hana",
+      "name": "Hana Yosef-Hay",
+      "first_name": "Hana",
+      "last_name": "Yosef-Hay",
+      "x": 1055,
+      "y": 415,
+      "last_name_y": 435,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-david-2",
+      "name": "David Neuman",
+      "first_name": "David",
+      "last_name": "Neuman",
+      "x": 605,
+      "y": 575,
+      "last_name_y": 595,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-rivka",
+      "name": "Rivka Neuman (Yosef-Hay)",
+      "first_name": "Rivka",
+      "last_name": "Neuman (Yosef-Hay)",
+      "x": 805,
+      "y": 575,
+      "last_name_y": 595,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1946–2005"
+    },
+    {
+      "id": "neuman-yariv",
+      "name": "Yariv Neuman",
+      "first_name": "Yariv",
+      "last_name": "Neuman",
+      "x": 505,
+      "y": 735,
+      "last_name_y": 755,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "60-3",
+      "name": "Idit Neuman Steiner",
+      "first_name": "Idit",
+      "last_name": "Neuman Steiner",
+      "x": 705,
+      "y": 735,
+      "last_name_y": 755,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · same person as the main chart"
+    },
+    {
+      "id": "neuman-moran",
+      "name": "Moran Neuman Ayalon (Neuman)",
+      "first_name": "Moran Neuman",
+      "last_name": "Ayalon (Neuman)",
+      "x": 905,
+      "y": 735,
+      "last_name_y": 755,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    }
+  ],
+  "labels": [],
+  "lines": [
+    {
+      "x1": 185,
+      "y1": 100,
+      "x2": 215,
+      "y2": 100,
+      "width": 1.8
+    },
+    {
+      "x1": 200,
+      "y1": 132,
+      "x2": 200,
+      "y2": 180,
+      "width": 1.15
+    },
+    {
+      "x1": 100,
+      "y1": 180,
+      "x2": 200,
+      "y2": 180,
+      "width": 1.8
+    },
+    {
+      "x1": 100,
+      "y1": 180,
+      "x2": 100,
+      "y2": 228,
+      "width": 1.15
+    },
+    {
+      "x1": 605,
+      "y1": 100,
+      "x2": 635,
+      "y2": 100,
+      "width": 1.8
+    },
+    {
+      "x1": 620,
+      "y1": 132,
+      "x2": 620,
+      "y2": 180,
+      "width": 1.15
+    },
+    {
+      "x1": 620,
+      "y1": 180,
+      "x2": 730,
+      "y2": 180,
+      "width": 1.8
+    },
+    {
+      "x1": 730,
+      "y1": 180,
+      "x2": 730,
+      "y2": 228,
+      "width": 1.15
+    },
+    {
+      "x1": 1025,
+      "y1": 100,
+      "x2": 1055,
+      "y2": 100,
+      "width": 1.8
+    },
+    {
+      "x1": 1040,
+      "y1": 132,
+      "x2": 1040,
+      "y2": 180,
+      "width": 1.15
+    },
+    {
+      "x1": 930,
+      "y1": 180,
+      "x2": 1040,
+      "y2": 180,
+      "width": 1.8
+    },
+    {
+      "x1": 930,
+      "y1": 180,
+      "x2": 930,
+      "y2": 228,
+      "width": 1.15
+    },
+    {
+      "x1": 185,
+      "y1": 260,
+      "x2": 215,
+      "y2": 260,
+      "width": 1.8
+    },
+    {
+      "x1": 200,
+      "y1": 292,
+      "x2": 200,
+      "y2": 340,
+      "width": 1.15
+    },
+    {
+      "x1": 200,
+      "y1": 340,
+      "x2": 440,
+      "y2": 340,
+      "width": 1.8
+    },
+    {
+      "x1": 440,
+      "y1": 340,
+      "x2": 440,
+      "y2": 388,
+      "width": 1.15
+    },
+    {
+      "x1": 815,
+      "y1": 260,
+      "x2": 845,
+      "y2": 260,
+      "width": 1.8
+    },
+    {
+      "x1": 830,
+      "y1": 292,
+      "x2": 830,
+      "y2": 340,
+      "width": 1.15
+    },
+    {
+      "x1": 640,
+      "y1": 340,
+      "x2": 830,
+      "y2": 340,
+      "width": 1.8
+    },
+    {
+      "x1": 640,
+      "y1": 340,
+      "x2": 640,
+      "y2": 388,
+      "width": 1.15
+    },
+    {
+      "x1": 525,
+      "y1": 420,
+      "x2": 555,
+      "y2": 420,
+      "width": 1.8
+    },
+    {
+      "x1": 540,
+      "y1": 452,
+      "x2": 540,
+      "y2": 500,
+      "width": 1.15
+    },
+    {
+      "x1": 540,
+      "y1": 500,
+      "x2": 690,
+      "y2": 500,
+      "width": 1.8
+    },
+    {
+      "x1": 690,
+      "y1": 500,
+      "x2": 690,
+      "y2": 548,
+      "width": 1.15
+    },
+    {
+      "x1": 1025,
+      "y1": 420,
+      "x2": 1055,
+      "y2": 420,
+      "width": 1.8
+    },
+    {
+      "x1": 1040,
+      "y1": 452,
+      "x2": 1040,
+      "y2": 500,
+      "width": 1.15
+    },
+    {
+      "x1": 890,
+      "y1": 500,
+      "x2": 1040,
+      "y2": 500,
+      "width": 1.8
+    },
+    {
+      "x1": 890,
+      "y1": 500,
+      "x2": 890,
+      "y2": 548,
+      "width": 1.15
+    },
+    {
+      "x1": 775,
+      "y1": 580,
+      "x2": 805,
+      "y2": 580,
+      "width": 1.8
+    },
+    {
+      "x1": 790,
+      "y1": 612,
+      "x2": 790,
+      "y2": 660,
+      "width": 1.15
+    },
+    {
+      "x1": 590,
+      "y1": 660,
+      "x2": 990,
+      "y2": 660,
+      "width": 1.8
+    },
+    {
+      "x1": 590,
+      "y1": 660,
+      "x2": 590,
+      "y2": 708,
+      "width": 1.15
+    },
+    {
+      "x1": 790,
+      "y1": 660,
+      "x2": 790,
+      "y2": 708,
+      "width": 1.15
+    },
+    {
+      "x1": 990,
+      "y1": 660,
+      "x2": 990,
+      "y2": 708,
+      "width": 1.15
+    }
+  ]
+}

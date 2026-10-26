@@ -20,8 +20,7 @@ const PERSON_CHART_LINKS = {
 };
 const RELATED_SOURCE_CHARTS = {
   "neuman-yosef-hay": {
-    href: "assets/photos/geni-tree/neuman-yosef-hay-family.jpg",
-    description: "The Neuman-Yosef-Hay family tree, including Idit Neuman Steiner.",
+    description: "Viewing the Neuman-Yosef-Hay family tree, including Idit Neuman Steiner.",
     linkText: "Open the Neuman-Yosef-Hay family tree",
   },
 };
@@ -55,6 +54,7 @@ let mainTreeData;
 let moreSteinerTreeData;
 let steinerListTreeData;
 let feiginTreeData;
+let neumanTreeData;
 let mainPhotosByPerson = {};
 let photosByPerson = {};
 let profilesByPerson = {};
@@ -300,7 +300,7 @@ function renderPersonDetails(person) {
   personSourceChart.hidden = !sourceChart;
   if (sourceChart) {
     personSourceChartDescription.textContent = sourceChart.description;
-    personSourceChartLink.href = sourceChart.href;
+    personSourceChartLink.dataset.chartId = profile.related_chart;
     personSourceChartLink.textContent = sourceChart.linkText;
   }
   personFacts.replaceChildren();
@@ -437,6 +437,7 @@ function showTreeView(treeId, selectedId = null) {
     "more-steiner": moreSteinerTreeData,
     "steiner-list": steinerListTreeData,
     feigin: feiginTreeData,
+    "neuman-yosef-hay": neumanTreeData,
   }[treeId];
   const photos = mainPhotosByPerson;
   drawChart(viewData, photos);
@@ -445,6 +446,8 @@ function showTreeView(treeId, selectedId = null) {
   relatedTreeNotice.hidden = !hasRelatedView;
   relatedTreeDescription.textContent = treeId === "feigin"
     ? "Viewing the Feigin branch connected through Yael."
+    : treeId === "neuman-yosef-hay"
+      ? RELATED_SOURCE_CHARTS[treeId].description
     : treeId === "more-steiner"
       ? "Viewing the additional chart as a separate source; Juda Steiner is linked to Jehuda Steiner in the full chart."
       : "Viewing the numbered source list as a separate branch; abbreviated names are not merged automatically.";
@@ -454,11 +457,14 @@ function showTreeView(treeId, selectedId = null) {
   if (selectedId && viewData.people.some((person) => person.id === selectedId)) {
     selectPerson(selectedId, false, false);
   }
-  if (treeId === "feigin") {
+  if (treeId === "feigin" || treeId === "neuman-yosef-hay") {
     document.querySelector("#tree").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 
+personSourceChartLink.addEventListener("click", () => {
+  showTreeView(personSourceChartLink.dataset.chartId, selectedPersonId);
+});
 relatedTreeButton.addEventListener("click", () => {
   if (activeTreeId === "feigin") showTreeView("steiner", "50-9");
   else showTreeView("feigin", "50-9");
@@ -551,22 +557,26 @@ Promise.all([
   fetch("data/person-photos.json", { cache: "no-cache" }),
   fetch("data/person-profiles.json?v=idit-neuman-chart-1"),
   fetch("data/feigin-branch.json?v=feigin-buerger-1"),
+  fetch("data/neuman-yosef-hay-tree.json?v=neuman-tree-3"),
 ])
-  .then(async ([treeResponse, moreSteinerResponse, steinerListResponse, photosResponse, profilesResponse, feiginResponse]) => {
+  .then(async ([treeResponse, moreSteinerResponse, steinerListResponse, photosResponse, profilesResponse, feiginResponse, neumanResponse]) => {
     if (!treeResponse.ok) throw new Error(`Could not load family chart data (${treeResponse.status}).`);
     if (!moreSteinerResponse.ok) throw new Error(`Could not load the additional Steiner chart (${moreSteinerResponse.status}).`);
     if (!steinerListResponse.ok) throw new Error(`Could not load the numbered Steiner list (${steinerListResponse.status}).`);
     if (!photosResponse.ok) throw new Error(`Could not load matched family photos (${photosResponse.status}).`);
     if (!profilesResponse.ok) throw new Error(`Could not load sourced family details (${profilesResponse.status}).`);
     if (!feiginResponse.ok) throw new Error(`Could not load the Feigin family branch (${feiginResponse.status}).`);
-    const [tree, moreSteinerTree, steinerListTree, photoData, profileData, feiginTree] = await Promise.all([
+    if (!neumanResponse.ok) throw new Error(`Could not load the Neuman-Yosef-Hay family tree (${neumanResponse.status}).`);
+    const [tree, moreSteinerTree, steinerListTree, photoData, profileData, feiginTree, neumanTree] = await Promise.all([
       treeResponse.json(),
       moreSteinerResponse.json(),
       steinerListResponse.json(),
       photosResponse.json(),
       profilesResponse.json(),
       feiginResponse.json(),
+      neumanResponse.json(),
     ]);
+    neumanTreeData = neumanTree;
     mainTreeData = tree;
     moreSteinerTreeData = moreSteinerTree;
     steinerListTreeData = steinerListTree;
