@@ -22,6 +22,8 @@ On macOS, run `python3 scripts/import_person_photos.py` to match clearly named p
 
 Select Yael Feigin or Ze'ev Steiner, then choose **Explore the Feigin branch** to view the documented link through Yael's parents and her family with Ze'ev. The branch reuses the people in the main chart where their identities are confirmed. Use the family-view selector to switch between the full Steiner chart, the additional Steiner chart, and the Feigin branch. The additional chart remains separate rather than automatically merging duplicate-looking names.
 
+The available sources identify Yael's parents, Schlomo Feigin and Hava Feigen [Buerger], and report both were born about 1920. The 2014 family book says they had one daughter, Yael. The supplied documents do not identify earlier Feigin or Buerger generations or other relatives in those families; those gaps are left explicit rather than inferred.
+
 Opening the Feigin branch brings the chart section into view. Its compact layout adapts to narrow screens, while the original wide charts keep their own zoom and scroll behavior.
 
 The original `docs/` files stay private. Reviewed family facts, cited source page numbers, and chart transcriptions are published as website data. To regenerate the two additional workbook views, install their local extraction dependency and run:
@@ -32,7 +34,7 @@ python3 scripts/export_legacy_chart.py
 python3 scripts/export_steiner_list.py
 ```
 
-The longer Lindenfeld list and the full MyHeritage report contain further information about relatives. Only facts matched to displayed people and included in `data/person-profiles.json` are published; unmatched identities and branches remain unlinked. The raw documents and contact details are not published. The Lindenfeld list remains private until its extended relationships and living relatives can be reviewed.
+The longer Lindenfeld list and the full MyHeritage report contain further information about relatives. Only reviewed facts matched to displayed people and included in `data/person-profiles.json` are published; unmatched identities and branches remain unlinked. The raw documents and contact details are not published.
 
 ## Preview locally
 
