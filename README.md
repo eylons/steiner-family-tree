@@ -14,7 +14,7 @@ swift scripts/stitch_photos.swift
 
 ## Match gallery photos to people
 
-On macOS, run `python3 scripts/import_person_photos.py` to match clearly named photos in `steiner_gallery/` to people in `data/tree.json`. The script copies only matched photos into the published assets, creates smaller thumbnails, and writes `data/person-photos.json`. Names that cannot be identified confidently from their filenames are left unassigned. Select a person in the chart to view their matched photos.
+On macOS, run `python3 scripts/import_person_photos.py` to match clearly named photos in `steiner_gallery/` to people in `data/tree.json`. Photos in `more_pics/Yael/` are explicitly assigned to Yael Feigin (row 50, column 9). The script copies matched photos into the published assets, reuses existing assets when the source image is an exact duplicate, creates smaller thumbnails, and writes `data/person-photos.json`. Names that cannot be identified confidently from their filenames are left unassigned. Original photo folders are excluded from the published repository. Select a person in the chart to view their matched photos.
 
 ## Preview locally
 

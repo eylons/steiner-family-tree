@@ -1,5 +1,287 @@
 {
   "photos": {
+    "50-9": [
+      {
+        "filename": "19730001-1.jpg",
+        "src": "assets/person-photos/19730001-1-4cd6484132.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/19730001-1-4cd6484132.jpg"
+      },
+      {
+        "filename": "19730001.jpg",
+        "src": "assets/person-photos/19730001-34d2f53062.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/19730001-34d2f53062.jpg"
+      },
+      {
+        "filename": "yael0001.jpg",
+        "src": "assets/person-photos/yael0001-23fb5189bc.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael0001-23fb5189bc.jpg"
+      },
+      {
+        "filename": "yael0002.jpg",
+        "src": "assets/person-photos/yael0002-d1c99841ed.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael0002-d1c99841ed.jpg"
+      },
+      {
+        "filename": "yael0003.jpg",
+        "src": "assets/person-photos/yael0003-8bc12bdd02.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael0003-8bc12bdd02.jpg"
+      },
+      {
+        "filename": "yael0004 (2).jpg",
+        "src": "assets/person-photos/yael0004-2-6bcbfa837d.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael0004-2-6bcbfa837d.jpg"
+      },
+      {
+        "filename": "yael0004.jpg",
+        "src": "assets/person-photos/yael0004-f24359b8d2.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael0004-f24359b8d2.jpg"
+      },
+      {
+        "filename": "yael0005.jpg",
+        "src": "assets/person-photos/yael0005-797ab7bbbc.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael0005-797ab7bbbc.jpg"
+      },
+      {
+        "filename": "yael0006.jpg",
+        "src": "assets/person-photos/yael0006-70e2768708.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael0006-70e2768708.jpg"
+      },
+      {
+        "filename": "yael0007.jpg",
+        "src": "assets/person-photos/yael0007-c34a11ed26.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael0007-c34a11ed26.jpg"
+      },
+      {
+        "filename": "yael0008.jpg",
+        "src": "assets/person-photos/yael0008-e4fd09aa43.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael0008-e4fd09aa43.jpg"
+      },
+      {
+        "filename": "YAEL_132.jpg",
+        "src": "assets/person-photos/yael-132-9defdf4189.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael-132-9defdf4189.jpg"
+      },
+      {
+        "filename": "YAEL_211.jpg",
+        "src": "assets/person-photos/yael-211-f3510abf56.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael-211-f3510abf56.jpg"
+      },
+      {
+        "filename": "YAEL_barzelona.jpg",
+        "src": "assets/person-photos/yael-barzelona-48fc7d35f0.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael-barzelona-48fc7d35f0.jpg"
+      },
+      {
+        "filename": "YAEL_tube-tik.jpg",
+        "src": "assets/person-photos/yael-tube-tik-3927ceb74c.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/yael-tube-tik-3927ceb74c.jpg"
+      },
+      {
+        "filename": "אהרון בן 80.jpg",
+        "src": "assets/person-photos/80-d116b7f349.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/80-d116b7f349.jpg"
+      },
+      {
+        "filename": "אוסטריה 19840001.jpg",
+        "src": "assets/person-photos/19840001-66d25d7532.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/19840001-66d25d7532.jpg"
+      },
+      {
+        "filename": "אוסטריה 19840002.jpg",
+        "src": "assets/person-photos/19840002-f19c66a0e7.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/19840002-f19c66a0e7.jpg"
+      },
+      {
+        "filename": "אוסטריה 19840004.jpg",
+        "src": "assets/person-photos/19840004-6ae4c92f35.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/19840004-6ae4c92f35.jpg"
+      },
+      {
+        "filename": "אוסטריה 19840005.jpg",
+        "src": "assets/person-photos/19840005-0d83b0db1f.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/19840005-0d83b0db1f.jpg"
+      },
+      {
+        "filename": "אוסטריה 19840006.jpg",
+        "src": "assets/person-photos/19840006-4bf74b962b.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/19840006-4bf74b962b.jpg"
+      },
+      {
+        "filename": "אוסטריה 19840007.jpg",
+        "src": "assets/person-photos/19840007-8c3bbafdee.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/19840007-8c3bbafdee.jpg"
+      },
+      {
+        "filename": "איזה יופי - יעל.jpg",
+        "src": "assets/person-photos/family-photo-dd56351a90.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-dd56351a90.jpg"
+      },
+      {
+        "filename": "ארהב 19860001.jpg",
+        "src": "assets/person-photos/19860001-bef69dd1ad.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/19860001-bef69dd1ad.jpg"
+      },
+      {
+        "filename": "ארהב.jpg",
+        "src": "assets/person-photos/family-photo-7934d2aecc.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-7934d2aecc.jpg"
+      },
+      {
+        "filename": "באי סקיי.jpg",
+        "src": "assets/person-photos/family-photo-69b6312e6e.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-69b6312e6e.jpg"
+      },
+      {
+        "filename": "בדרך מפראג לקרלובי ו�%.jpg",
+        "src": "assets/person-photos/family-photo-92fefd5790.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-92fefd5790.jpg"
+      },
+      {
+        "filename": "גלגל ענק בפראטר.jpg",
+        "src": "assets/person-photos/family-photo-92fb979995.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-92fb979995.jpg"
+      },
+      {
+        "filename": "גלרי לה פאייט.jpg",
+        "src": "assets/person-photos/family-photo-f9574483b1.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-f9574483b1.jpg"
+      },
+      {
+        "filename": "גן הפסלים של תומרקין %.jpg",
+        "src": "assets/person-photos/family-photo-b8786e4cbe.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-b8786e4cbe.jpg"
+      },
+      {
+        "filename": "גשר ארז'יבט.jpg",
+        "src": "assets/person-photos/family-photo-9c071f907d.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-9c071f907d.jpg"
+      },
+      {
+        "filename": "הלובר.jpg",
+        "src": "assets/person-photos/family-photo-7034926cff.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-7034926cff.jpg"
+      },
+      {
+        "filename": "המצודה בניאפולי.tif.jpg",
+        "src": "assets/person-photos/tif-137de29209.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/tif-137de29209.jpg"
+      },
+      {
+        "filename": "השוק בריקה, קרואטיה.jpg",
+        "src": "assets/person-photos/family-photo-697a1ef826.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-697a1ef826.jpg"
+      },
+      {
+        "filename": "חתונה של יאיר, בן של י%.jpg",
+        "src": "assets/person-photos/family-photo-a1312fa90e.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-a1312fa90e.jpg"
+      },
+      {
+        "filename": "יעל באיזה יופי0001.jpg",
+        "src": "assets/person-photos/0001-121a018099.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0001-121a018099.jpg"
+      },
+      {
+        "filename": "יעל ועמית.jpg",
+        "src": "assets/person-photos/family-photo-536b376dcb.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-536b376dcb.jpg"
+      },
+      {
+        "filename": "יעל, עדי זאביק0001.jpg",
+        "src": "assets/person-photos/0001-365840342f.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0001-365840342f.jpg"
+      },
+      {
+        "filename": "יעל0001 (2).jpg",
+        "src": "assets/person-photos/0001-2-7626acf5d0.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0001-2-7626acf5d0.jpg"
+      },
+      {
+        "filename": "יעל0001-1.jpg",
+        "src": "assets/person-photos/0001-1-6ca9538d8c.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0001-1-6ca9538d8c.jpg"
+      },
+      {
+        "filename": "יעל0001.jpg",
+        "src": "assets/person-photos/0001-824b1751e0.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0001-824b1751e0.jpg"
+      },
+      {
+        "filename": "יעל0002-1.jpg",
+        "src": "assets/person-photos/0002-1-f9ecb56b9c.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0002-1-f9ecb56b9c.jpg"
+      },
+      {
+        "filename": "יעל0002.jpg",
+        "src": "assets/person-photos/0002-6715a0043f.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0002-6715a0043f.jpg"
+      },
+      {
+        "filename": "יעל0003.jpg",
+        "src": "assets/person-photos/0003-f128243839.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0003-f128243839.jpg"
+      },
+      {
+        "filename": "יעל0004-1.jpg",
+        "src": "assets/person-photos/0004-1-a90fefdcd7.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0004-1-a90fefdcd7.jpg"
+      },
+      {
+        "filename": "יעל0004.jpg",
+        "src": "assets/person-photos/0004-14cf07c9a6.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0004-14cf07c9a6.jpg"
+      },
+      {
+        "filename": "ליד בנין האומ.jpg",
+        "src": "assets/person-photos/family-photo-3fc890df23.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-3fc890df23.jpg"
+      },
+      {
+        "filename": "נואיבה.jpg",
+        "src": "assets/person-photos/family-photo-19320a7c12.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-19320a7c12.jpg"
+      },
+      {
+        "filename": "סנט אנדרי.jpg",
+        "src": "assets/person-photos/family-photo-1a03149880.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-1a03149880.jpg"
+      },
+      {
+        "filename": "סקוטלנד 19900002.jpg",
+        "src": "assets/person-photos/19900002-d1d57dd368.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/19900002-d1d57dd368.jpg"
+      },
+      {
+        "filename": "סקוטלנד0001.jpg",
+        "src": "assets/person-photos/0001-dae2f8b9bd.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0001-dae2f8b9bd.jpg"
+      },
+      {
+        "filename": "על הדשא של סבא.jpg",
+        "src": "assets/person-photos/family-photo-fbc361b8f5.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-fbc361b8f5.jpg"
+      },
+      {
+        "filename": "על המגדל בקרלווי ווא�%.jpg",
+        "src": "assets/person-photos/family-photo-a125297e2c.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-a125297e2c.jpg"
+      },
+      {
+        "filename": "קרל אייל בדרך מגלזגו %.jpg",
+        "src": "assets/person-photos/family-photo-61866ce8ef.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-61866ce8ef.jpg"
+      },
+      {
+        "filename": "ריבקה ויעל.jpg",
+        "src": "assets/person-photos/family-photo-d27b6898e2.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/family-photo-d27b6898e2.jpg"
+      },
+      {
+        "filename": "תפן0001.jpg",
+        "src": "assets/person-photos/0001-98573c14c9.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/0001-98573c14c9.jpg"
+      }
+    ],
     "15-27": [
       {
         "filename": "0-0-Max  family.jpg",
@@ -266,38 +548,6 @@
         "thumbnail": "assets/person-photos/thumbnails/helli-david-sigi-fb22e9419f.jpg"
       }
     ],
-    "50-21": [
-      {
-        "filename": "David Steiner.jpg",
-        "src": "assets/person-photos/david-steiner-1567cf83f8.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/david-steiner-1567cf83f8.jpg"
-      },
-      {
-        "filename": "David's grave in Hallstadt.jpg",
-        "src": "assets/person-photos/david-s-grave-in-hallstadt-8ac3d153fd.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/david-s-grave-in-hallstadt-8ac3d153fd.jpg"
-      },
-      {
-        "filename": "David's grave.jpg",
-        "src": "assets/person-photos/david-s-grave-e75668b2d1.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/david-s-grave-e75668b2d1.jpg"
-      },
-      {
-        "filename": "David_.jpg",
-        "src": "assets/person-photos/david-14b25427ca.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/david-14b25427ca.jpg"
-      },
-      {
-        "filename": "Fritz, Boxer (Neighbor), Juda, David.jpg",
-        "src": "assets/person-photos/fritz-boxer-neighbor-juda-david-25720bb401.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/fritz-boxer-neighbor-juda-david-25720bb401.jpg"
-      },
-      {
-        "filename": "Helli, David, Sigi.jpg",
-        "src": "assets/person-photos/helli-david-sigi-fb22e9419f.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/helli-david-sigi-fb22e9419f.jpg"
-      }
-    ],
     "41-14": [
       {
         "filename": "Erzsi 1923.jpg",
@@ -386,8 +636,8 @@
       },
       {
         "filename": "Sha'ar Hagolan, Erzsi.jpg",
-        "src": "assets/person-photos/sha-ar-hagolan-erzsi-2db508c52f.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/sha-ar-hagolan-erzsi-2db508c52f.jpg"
+        "src": "assets/person-photos/shaar-hagolan-erzsi-2db508c52f.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/shaar-hagolan-erzsi-2db508c52f.jpg"
       },
       {
         "filename": "Sha'ar Hagolan, Juda, Erzs, Sandor, Lanii.jpg",
@@ -675,6 +925,18 @@
         "filename": "Lina Steiner.jpg",
         "src": "assets/person-photos/lina-steiner-7d5fdaf497.jpg",
         "thumbnail": "assets/person-photos/thumbnails/lina-steiner-7d5fdaf497.jpg"
+      }
+    ],
+    "50-13": [
+      {
+        "filename": "Moshe Ze'ev Lindenfeld, 1881-1931.jpg",
+        "src": "assets/person-photos/moshe-ze-ev-lindenfeld-1881-1931-56b6c98591.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/moshe-ze-ev-lindenfeld-1881-1931-56b6c98591.jpg"
+      },
+      {
+        "filename": "Willhelm (Moshe Ze'ev) Lindenfeld.jpg",
+        "src": "assets/person-photos/willhelm-moshe-ze-ev-lindenfeld-26544a45ac.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/willhelm-moshe-ze-ev-lindenfeld-26544a45ac.jpg"
       }
     ],
     "15-24": [

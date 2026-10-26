@@ -14,6 +14,9 @@ CELL_REFERENCE = re.compile(r"([A-Z]+)(\d+)")
 NAME_ROWS = ((2, 3), (6, 7), (15, 16), (16, 17), (25, 26), (41, 42), (50, 51), (60, 61), (67, 68), (69, 70))
 COLUMN_WIDTH = 42
 DEFAULT_ROW_HEIGHT = 21
+PERSON_NAME_OVERRIDES = {
+    "50-13": ("Ze'ev", "Steiner"),
+}
 
 
 def column_index(letters):
@@ -156,22 +159,27 @@ def export(source, destination):
             if not any(character.isalpha() for character in first_name):
                 continue
             last_name = texts.get((last_row, column), "")
+            person_id = str(first_row) + "-" + str(column)
+            first_name, last_name = PERSON_NAME_OVERRIDES.get(
+                person_id,
+                (title_name(first_name), title_name(last_name)),
+            )
             person_cells.add((first_row, column))
             if last_name:
                 person_cells.add((last_row, column))
             span = merge_widths.get((first_row, column), 1)
-            full_name = title_name(first_name)
+            full_name = first_name
             if last_name:
-                full_name += " " + title_name(last_name)
+                full_name += " " + last_name
             line_height = min(
                 rows.get(first_row, DEFAULT_ROW_HEIGHT),
                 rows.get(last_row, DEFAULT_ROW_HEIGHT),
             )
             people.append({
-                "id": str(first_row) + "-" + str(column),
+                "id": person_id,
                 "name": full_name,
-                "first_name": title_name(first_name),
-                "last_name": title_name(last_name),
+                "first_name": first_name,
+                "last_name": last_name,
                 "row": first_row,
                 "last_name_row": last_row,
                 "column": column,

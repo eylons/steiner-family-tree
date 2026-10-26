@@ -2,5 +2,6 @@
 __pycache__/
 docs/
 /steiner_gallery/
+/more_pics/
 /tree_steiner_*.jpeg
 node_modules/
