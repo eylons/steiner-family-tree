@@ -18,6 +18,13 @@ const PERSON_CHART_LINKS = {
     alternateName: "Jehuda Steiner",
   },
 };
+const RELATED_SOURCE_CHARTS = {
+  "neuman-yosef-hay": {
+    href: "assets/photos/geni-tree/neuman-yosef-hay-family.jpg",
+    description: "The Neuman-Yosef-Hay family tree, including Idit Neuman Steiner.",
+    linkText: "Open the Neuman-Yosef-Hay family tree",
+  },
+};
 
 const viewport = document.querySelector("#tree-viewport");
 const svg = document.querySelector("#family-tree");
@@ -37,6 +44,9 @@ const relatedTreeButton = document.querySelector("#open-related-tree");
 const personChartLink = document.querySelector("#person-chart-link");
 const personChartLinkDescription = document.querySelector("#person-chart-link-description");
 const personChartLinkButton = document.querySelector("#open-linked-chart");
+const personSourceChart = document.querySelector("#person-source-chart");
+const personSourceChartDescription = document.querySelector("#person-source-chart-description");
+const personSourceChartLink = document.querySelector("#open-person-source-chart");
 const treeViewSelect = document.querySelector("#tree-view-select");
 const relatedTreeDescription = document.querySelector("#related-tree-description");
 
@@ -286,6 +296,13 @@ function selectPerson(id, center, scrollToCard = true) {
 
 function renderPersonDetails(person) {
   const profile = profilesByPerson[person.id] || {};
+  const sourceChart = RELATED_SOURCE_CHARTS[profile.related_chart];
+  personSourceChart.hidden = !sourceChart;
+  if (sourceChart) {
+    personSourceChartDescription.textContent = sourceChart.description;
+    personSourceChartLink.href = sourceChart.href;
+    personSourceChartLink.textContent = sourceChart.linkText;
+  }
   personFacts.replaceChildren();
   for (const fact of profile.facts || []) {
     const term = document.createElement("dt");
@@ -532,7 +549,7 @@ Promise.all([
   fetch("data/more-steiners-tree.json"),
   fetch("data/steiner-list-tree.json"),
   fetch("data/person-photos.json", { cache: "no-cache" }),
-  fetch("data/person-profiles.json?v=feigin-buerger-1"),
+  fetch("data/person-profiles.json?v=idit-neuman-chart-1"),
   fetch("data/feigin-branch.json?v=feigin-buerger-1"),
 ])
   .then(async ([treeResponse, moreSteinerResponse, steinerListResponse, photosResponse, profilesResponse, feiginResponse]) => {

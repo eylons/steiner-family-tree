@@ -7,7 +7,7 @@
     <meta name="description" content="Explore the Steiner family tree, transcribed from the family chart and photographs.">
     <title>The Steiner Family Archive</title>
     <link rel="stylesheet" href="styles.css?v=original-charts-page-1">
-    <script src="app.js?v=person-click-and-scroll-space-1" defer></script>
+    <script src="app.js?v=idit-neuman-tree-link-1" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -119,6 +119,16 @@
             <h4>Same person in another chart</h4>
             <p id="person-chart-link-description"></p>
             <button class="related-tree-button" id="open-linked-chart" type="button"></button>
+          </section>
+          <section class="person-related" id="person-source-chart" hidden>
+            <h4>Related family chart</h4>
+            <p id="person-source-chart-description"></p>
+            <a
+              class="related-tree-button"
+              id="open-person-source-chart"
+              target="_blank"
+              rel="noopener"
+            ></a>
           </section>
           <section class="person-related" id="person-related" hidden>
             <h4>Related family tree</h4>
