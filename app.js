@@ -488,7 +488,6 @@ document.addEventListener("keydown", (event) => {
 });
 viewport.addEventListener("pointerdown", (event) => {
   if (event.button !== 0) return;
-  viewport.setPointerCapture(event.pointerId);
   dragStart = {
     x: event.clientX,
     y: event.clientY,
@@ -502,7 +501,12 @@ viewport.addEventListener("pointermove", (event) => {
   if (!dragStart) return;
   const deltaX = event.clientX - dragStart.x;
   const deltaY = event.clientY - dragStart.y;
-  if (Math.abs(deltaX) > 4 || Math.abs(deltaY) > 4) dragMoved = true;
+  if (Math.abs(deltaX) > 4 || Math.abs(deltaY) > 4) {
+    dragMoved = true;
+    if (!viewport.hasPointerCapture(event.pointerId)) {
+      viewport.setPointerCapture(event.pointerId);
+    }
+  }
   if (dragMoved) {
     viewport.scrollLeft = dragStart.left - deltaX;
     viewport.scrollTop = dragStart.top - deltaY;

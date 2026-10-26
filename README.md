@@ -26,7 +26,7 @@ The available sources identify Yael's parents, Schlomo Feigin and Hava Feigen [B
 
 Opening the Feigin branch brings the chart section into view. Its compact layout adapts to narrow screens, while the original wide charts keep their own zoom and scroll behavior.
 
-The five scans in `assets/photos/feigin-source/` are a separate, zoomable source collection, not yet linked to the Feigin branch through Yael. The Feigin poster uses first names only; its label יעל זאב refers to two people, Yael Feigin and Ze'ev Steiner. The poster is not integrated into the family-tree data. Other handwritten names and relationships remain untranscribed until they can be read reliably.
+The original Steiner chart photographs and five scans in `assets/photos/feigin-source/` are available on the separate `original-charts.html` page, linked from the main page. The Feigin scans remain a separate source collection, not linked to the Feigin branch through Yael. The Feigin poster uses first names only; its label יעל זאב refers to two people, Yael Feigin and Ze'ev Steiner. The poster is not integrated into the family-tree data. Other handwritten names and relationships remain untranscribed until they can be read reliably.
 
 The original `docs/` files stay private. Reviewed family facts, cited source page numbers, and chart transcriptions are published as website data. To regenerate the two additional workbook views, install their local extraction dependency and run:
 
