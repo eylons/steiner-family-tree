@@ -26,6 +26,8 @@ The available sources identify Yael's parents, Schlomo Feigin and Hava Feigen [B
 
 Opening the Feigin branch brings the chart section into view. Its compact layout adapts to narrow screens, while the original wide charts keep their own zoom and scroll behavior.
 
+The five scans in `assets/photos/feigin-source/` are a separate, zoomable source collection, not yet linked to the Feigin branch through Yael. Clearly readable Hebrew root labels are shown with English transliterations. Other handwritten names and relationships remain untranscribed until they can be read reliably.
+
 The original `docs/` files stay private. Reviewed family facts, cited source page numbers, and chart transcriptions are published as website data. To regenerate the two additional workbook views, install their local extraction dependency and run:
 
 ```sh

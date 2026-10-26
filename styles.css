@@ -800,6 +800,14 @@ h2 {
   margin-bottom: 23px;
 }
 
+.source-chart-note {
+  max-width: 850px;
+  margin: -7px 0 22px;
+  color: #687067;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
 .panorama-wrap {
   margin-bottom: 19px;
   overflow: hidden;
