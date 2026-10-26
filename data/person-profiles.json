@@ -6,7 +6,13 @@
           "label": "Birth estimate",
           "value": "Between 1770 and 1800; the source marks this estimate as unreliable",
           "source": "MyHeritage family book (2014)",
-          "page": 16
+          "page": 17
+        },
+        {
+          "label": "Family",
+          "value": "The report identifies Joseph Steiner as Abraham's son.",
+          "source": "MyHeritage family book (2014)",
+          "page": 17
         }
       ]
     },
@@ -17,9 +23,35 @@
           "value": "Schlomo Feigin and Hava Feigen [Buerger]",
           "source": "MyHeritage family book (2014)",
           "page": 207
+        },
+        {
+          "label": "Family",
+          "value": "The report names Ze'ev Steiner as Yael's spouse and lists Eylon, Ofir, and Adi as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 4
         }
       ],
       "related_tree": "feigin"
+    },
+    "41-7": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Hava Feigen [Buerger] as a parent of Yael Steiner [Feigin].",
+          "source": "MyHeritage family book (2014)",
+          "page": 207
+        }
+      ]
+    },
+    "41-11": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Schlomo Feigin as a parent of Yael Steiner [Feigin].",
+          "source": "MyHeritage family book (2014)",
+          "page": 207
+        }
+      ]
     },
     "50-13": {
       "facts": [
@@ -28,9 +60,1281 @@
           "value": "18 September 1940 (as reported; the source marks some birth details uncertain)",
           "source": "MyHeritage family book (2014)",
           "page": 4
+        },
+        {
+          "label": "Parents",
+          "value": "Jehude Steiner and Ersze' Steiner [Lindenfeld]",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        },
+        {
+          "label": "Family",
+          "value": "The report names Yael Steiner [Feigin] as Ze'ev's spouse and lists Eylon, Ofir, and Adi as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 4
         }
       ],
       "related_tree": "feigin"
+    },
+    "60-7": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Ze'ev Steiner and Yael Steiner [Feigin] as Eylon's parents and Idit Steiner [Neuman] as his spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 4
+        },
+        {
+          "label": "Children",
+          "value": "The Lindenfeld family list names Shir, Noam, and Amir as Eylon and Idit's children.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.2"
+        }
+      ]
+    },
+    "60-3": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Eylon Steiner as Idit's spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 4
+        }
+      ]
+    },
+    "60-10": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Ze'ev Steiner and Yael Steiner [Feigin] as Ofir's parents and Sarit Steiner [Asael] as his spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 4
+        },
+        {
+          "label": "Children",
+          "value": "The Lindenfeld family list names Ori, shown in the main chart as Ori-yael Steiner, as their child.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.3"
+        }
+      ]
+    },
+    "60-14": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Ofir Steiner as Sarit's spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 4
+        },
+        {
+          "label": "Children",
+          "value": "The Lindenfeld family list names Ori, shown in the main chart as Ori-yael Steiner, as their child.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.3"
+        }
+      ]
+    },
+    "60-17": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Ze'ev Steiner and Yael Steiner [Feigin] as Adi's parents and Lior Haimi as her spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 4
+        },
+        {
+          "label": "Children",
+          "value": "The Lindenfeld family list names Shaked, Amit, and Shir Haimi as Adi and Lior's children.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.1"
+        }
+      ]
+    },
+    "60-21": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Adi Haimi [Steiner] as Lior's spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 4
+        }
+      ]
+    },
+    "50-25": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Gerda Lord [Steiner] as Martin's spouse and Michael and Susan as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "60-24": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Martin Lord and Gerda Lord [Steiner] as Michael's parents; it names Dayna Lord [Yardeni] as his spouse and Jonathan as their son.",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        }
+      ]
+    },
+    "60-28": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Michael Lord as Dayna's spouse and Jonathan as their son.",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        }
+      ]
+    },
+    "60-31": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Martin Lord and Gerda Lord [Steiner] as Susan's parents. Susan married Ross Stephan; the report lists Games and Emma as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        }
+      ]
+    },
+    "60-35": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Susan Stephan [Lord] as Ross's spouse and Games and Emma as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        }
+      ]
+    },
+    "69-29": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Michael Lord and Dayna Lord [Yardeni] as Jonathan's parents.",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        }
+      ]
+    },
+    "69-1": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "The Lindenfeld family list names Eylon Steiner and Idit Neuman as Shir's parents.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.2.1"
+        }
+      ]
+    },
+    "69-4": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "The Lindenfeld family list names Eylon Steiner and Idit Neuman as Noam's parents.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.2.2"
+        }
+      ]
+    },
+    "69-7": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "The Lindenfeld family list names Eylon Steiner and Idit Neuman as Amir's parents.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.2.3"
+        }
+      ]
+    },
+    "69-13": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "The Lindenfeld family list names Ofir Steiner and Sarit Asael as Ori's parents.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.3.1"
+        }
+      ]
+    },
+    "69-19": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "The Lindenfeld family list names Adi Steiner and Lior Haimi as Shaked's parents.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.1.1"
+        }
+      ]
+    },
+    "69-22": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "The Lindenfeld family list names Adi Steiner and Lior Haimi as Amit's parents.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.1.2"
+        }
+      ]
+    },
+    "69-25": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "The Lindenfeld family list names Adi Steiner and Lior Haimi as Shir Haimi's parents.",
+          "source": "Lindenfeld family list",
+          "location": "entry 1.1.2.3.1.1.3"
+        }
+      ]
+    },
+    "69-33": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report lists Ross Stephan and Susan Stephan [Lord] as Emma's parents.",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        }
+      ]
+    },
+    "69-36": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report lists Ross Stephan and Susan Stephan [Lord] as Games's parents.",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        }
+      ]
+    },
+    "50-35": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "About 1950",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        },
+        {
+          "label": "Family",
+          "value": "The report identifies Siegfried Steiner and Rosa Steiner [Krompova] as Peter's parents. Peter and Anne Steiner [Barnes] had sons Robert and John, both reported born about 1970.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "50-39": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Peter Steiner as Anne's spouse and lists Robert and John as their sons.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "60-38": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "About 1970",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        },
+        {
+          "label": "Parents",
+          "value": "Peter Steiner and Anne Steiner [Barnes]",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "60-44": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "About 1970",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        },
+        {
+          "label": "Parents",
+          "value": "Peter Steiner and Anne Steiner [Barnes]",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "50-29": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "About 1950",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        },
+        {
+          "label": "Family",
+          "value": "The report identifies Siegfried Steiner and Rosa Steiner [Krompova] as Gerda's parents. Gerda married Martin Lord; their children are Michael and Susan.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "60-52": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Erich Steiner and Ingrid Steiner as Manuela's parents.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "60-56": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Erich Steiner and Ingrid Steiner as Michaela's parents; the report marks some related details as uncertain.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "50-52": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Jeno Steiner and Fini Steiner as Erich's parents. Erich married Ingrid Steiner; their children are Manuela and Michaela.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "50-56": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Erich Steiner as Ingrid's spouse and lists Manuela and Michaela as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "50-62": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Jeno Steiner and Fini Steiner as Evelyn's parents.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "41-34": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "About 1920; the report also says he was known as Sigi",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        },
+        {
+          "label": "Parents",
+          "value": "Simon (Simha) Steiner and Hermina Steiner",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "41-30": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "About 1920",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        },
+        {
+          "label": "Family",
+          "value": "The report names Siegfried Steiner as Rosa's spouse and lists Gerda and Peter, both born about 1950, as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "41-44": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Simon (Simha) Steiner and Hermina Steiner as Hilde's parents. Hilde married Lajos Gruenwald; their son is Heinz.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "41-48": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Hilde Gruenwald [Steiner] as Lajos's spouse and Heinz as their son.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "50-46": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Lajos Gruenwald and Hilde Gruenwald [Steiner]",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "41-51": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Simon (Simha) Steiner and Hermina Steiner",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "41-57": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Simon (Simha) Steiner and Hermina Steiner",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        },
+        {
+          "label": "Family",
+          "value": "Jeno married Fini Steiner; the report lists Erich and Evelyn as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "41-61": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Jeno Steiner as Fini's spouse and lists Erich and Evelyn as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "50-76": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Adolf Steiner and Fritzi Steiner [Jaul]",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        },
+        {
+          "label": "Family",
+          "value": "Erich married Mary Steiner [Hartley]; the report lists Tim, Tony, and Julia as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "50-80": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Erich Steiner as Mary's spouse and lists Tim, Tony, and Julia as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "50-70": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Adolf Steiner and Fritzi Steiner [Jaul]",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "60-86": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Erich Steiner and Mary Steiner [Hartley]",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "60-79": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Erich Steiner and Mary Steiner [Hartley] as Tony's parents. Tony married Victoria Steiner; their daughter is Anastasia.",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        }
+      ]
+    },
+    "60-83": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Tony Steiner as Victoria's spouse and Anastasia as their daughter.",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        }
+      ]
+    },
+    "60-89": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Erich Steiner and Mary Steiner [Hartley]",
+          "source": "MyHeritage family book (2014)",
+          "page": 7
+        }
+      ]
+    },
+    "67-81": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Tony Steiner and Victoria Steiner",
+          "source": "MyHeritage family book (2014)",
+          "page": 3
+        }
+      ]
+    },
+    "41-18": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Simon (Simha) Steiner and Hermina Steiner",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        },
+        {
+          "label": "Family",
+          "value": "Jehude married Ersze' Steiner [Lindenfeld]; their sons are Ze'ev, David, and Gili.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "41-14": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Wilhelm Lindenfeld and Hermine Lindenfeld [Steiner]",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        },
+        {
+          "label": "Family",
+          "value": "The report names Jehude Steiner as Ersze's spouse and lists Ze'ev, David, and Gili as their sons.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "50-17": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Jehude Steiner and Ersze' Steiner [Lindenfeld]",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "50-21": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Jehude Steiner and Ersze' Steiner [Lindenfeld]",
+          "source": "MyHeritage family book (2014)",
+          "page": 5
+        }
+      ]
+    },
+    "41-54": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Simon (Simha) Steiner and Hermina Steiner",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "41-71": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Simon (Simha) Steiner and Hermina Steiner",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        },
+        {
+          "label": "Family",
+          "value": "Adolf married Fritzi Steiner [Jaul]; their sons are Erich and Hans.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "41-75": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Adolf Steiner as Fritzi's spouse and lists Erich and Hans as their sons.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "25-16": {
+      "facts": [
+        {
+          "label": "Born",
+          "value": "1881 (as reported; the source marks this detail uncertain)",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        },
+        {
+          "label": "Family",
+          "value": "Wilhelm married Hermine Lindenfeld [Steiner]; their daughter is Ersze' Steiner [Lindenfeld].",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "25-20": {
+      "facts": [
+        {
+          "label": "Born",
+          "value": "1877 (as reported; the source marks this detail uncertain)",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        },
+        {
+          "label": "Parents",
+          "value": "Benedikt Steiner and Lina Steiner [Schlesinger]",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        },
+        {
+          "label": "Family",
+          "value": "Hermine married Wilhelm Lindenfeld; their daughter is Ersze' Steiner [Lindenfeld].",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "25-62": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Simon (Simha) Steiner and Hermina Steiner as the parents of Siegfried, Hilde, Willy, Jeno, Jehude, Adolf, and David.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "25-66": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Max Steiner and Rosa Steiner [Schlesinger]",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        },
+        {
+          "label": "Family",
+          "value": "The report names Simon (Simha) Steiner as Hermina's spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 13
+        }
+      ]
+    },
+    "25-58": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Max Steiner as Rosa's spouse and lists Adele, Jenny, Hanna, Bernhard, Jakob, Karoline, and Julius as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "16-75": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Max Steiner as Rosa's spouse and lists Adele, Jenny, Hanna, Bernhard, Jakob, Karoline, and Julius as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "15-27": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Rosa Steiner [Schlesinger] as Max's spouse and lists Adele, Jenny, Hanna, Bernhard, Jakob, Karoline, and Julius as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "16-79": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Rosa Steiner [Schlesinger] as Max's spouse and lists Adele, Jenny, Hanna, Bernhard, Jakob, Karoline, and Julius as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "15-21": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "About 1840",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        },
+        {
+          "label": "Family",
+          "value": "The report identifies Joseph Steiner and Hendel Steiner as Benedikt's parents and Lina Steiner [Schlesinger] as his spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        }
+      ]
+    },
+    "16-71": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "About 1840",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        },
+        {
+          "label": "Family",
+          "value": "The report identifies Joseph Steiner and Hendel Steiner as Benedikt's parents and Lina Steiner [Schlesinger] as his spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        }
+      ]
+    },
+    "15-17": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Benedikt Steiner as Lina's spouse and records her birth in 1852.",
+          "source": "MyHeritage family book (2014)",
+          "page": 18
+        }
+      ]
+    },
+    "16-67": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Benedikt Steiner as Lina's spouse and records her birth in 1852.",
+          "source": "MyHeritage family book (2014)",
+          "page": 18
+        }
+      ]
+    },
+    "16-83": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "About 1840",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        },
+        {
+          "label": "Family",
+          "value": "The report names Lina Nussbaum [Steiner] as a child of Joseph Steiner and Hendel Steiner.",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        }
+      ]
+    },
+    "6-17": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "Between 1800 and 1830; the source marks this estimate as unreliable",
+          "source": "MyHeritage family book (2014)",
+          "page": 18
+        },
+        {
+          "label": "Family",
+          "value": "The report identifies Charlotte Schlesinger [Stroh] as Joseph's spouse and Lina and Rosa as their daughters.",
+          "source": "MyHeritage family book (2014)",
+          "page": 18
+        }
+      ]
+    },
+    "6-21": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "Between 1800 and 1830; the source marks this estimate as unreliable",
+          "source": "MyHeritage family book (2014)",
+          "page": 18
+        },
+        {
+          "label": "Family",
+          "value": "The report names Joseph Schlesinger as Charlotte's spouse and Lina and Rosa as their daughters.",
+          "source": "MyHeritage family book (2014)",
+          "page": 18
+        }
+      ]
+    },
+    "6-80": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "About 1815",
+          "source": "MyHeritage family book (2014)",
+          "page": 17
+        },
+        {
+          "label": "Family",
+          "value": "The report identifies Abraham Steiner as Joseph's father and Hendel Steiner as his spouse. Their children include Benedikt, Lina Nussbaum [Steiner], and Max.",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        }
+      ]
+    },
+    "6-76": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Joseph Steiner as Hendel's spouse and lists Benedikt, Lina Nussbaum [Steiner], and Max as their children.",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        }
+      ]
+    },
+    "16-51": {
+      "facts": [
+        {
+          "label": "Born",
+          "value": "26 January 1915 in Szomolany/Smolenice, Hungary, as reported",
+          "source": "MyHeritage family book (2014)",
+          "page": 10
+        },
+        {
+          "label": "Died",
+          "value": "Reported as 15 March 1999 in Toronto, Canada; source records differ on the date.",
+          "source": "MyHeritage family book (2014)",
+          "page": 10
+        },
+        {
+          "label": "Migration",
+          "value": "The report lists an arrival in New York in 1940 from Genoa and another arrival at LaGuardia in 1946 after departure from Toronto; these source records are marked uncertain.",
+          "source": "MyHeritage family book (2014)",
+          "page": 10
+        },
+        {
+          "label": "Family",
+          "value": "The report identifies Jakob Steiner and Ida Steiner [Sidon] as Josef's parents. Josef married Rose Steiner [Metter]; their sons are Ronald, Alan, and Jack.",
+          "source": "MyHeritage family book (2014)",
+          "page": 10
+        }
+      ]
+    },
+    "25-98": {
+      "facts": [
+        {
+          "label": "Born",
+          "value": "1885 in Mattersdorf, Austria",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        },
+        {
+          "label": "Occupation",
+          "value": "Reported as a school principal in Budapest in 1940",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        },
+        {
+          "label": "Died",
+          "value": "The source reports that Jakob was murdered during the Holocaust in 1944.",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        },
+        {
+          "label": "Family",
+          "value": "The report identifies Max Steiner and Rosa Steiner [Schlesinger] as Jakob's parents. Jakob married Ida Steiner [Sidon]; their children include Eugene, Joseph, Nandor, and Jolan.",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        }
+      ]
+    },
+    "25-102": {
+      "facts": [
+        {
+          "label": "Born",
+          "value": "1891 in Smolenice, Czechoslovakia",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        },
+        {
+          "label": "Died",
+          "value": "The source reports that Ida died during the Holocaust in 1944.",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        },
+        {
+          "label": "Family",
+          "value": "Ida married Jakob Steiner. Their children include Eugene, Joseph, Nandor, and Jolan.",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        }
+      ]
+    },
+    "25-106": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Max Steiner and Rosa Steiner [Schlesinger]",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        },
+        {
+          "label": "Family",
+          "value": "The report names Pinkas Droehlich as Adele's spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "25-110": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Adele Droehlich [Steiner] as Pinkas's spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "25-121": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Max Steiner and Rosa Steiner [Schlesinger]",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "25-124": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Max Steiner and Rosa Steiner [Schlesinger]",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "25-127": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Max Steiner and Rosa Steiner [Schlesinger]",
+          "source": "MyHeritage family book (2014)",
+          "page": 14
+        }
+      ]
+    },
+    "25-114": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Max Steiner and Rosa Steiner [Schlesinger]",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        },
+        {
+          "label": "Family",
+          "value": "The report names Ignaz Weber as Karoline's spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        }
+      ]
+    },
+    "25-118": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Karoline Weber [Steiner] as Ignaz's spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        }
+      ]
+    },
+    "25-90": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report identifies Max Steiner and Rosa Steiner [Schlesinger] as Julius's parents and Frieda Steiner [Pollak] as his spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        }
+      ]
+    },
+    "25-94": {
+      "facts": [
+        {
+          "label": "Family",
+          "value": "The report names Julius Steiner as Frieda's spouse.",
+          "source": "MyHeritage family book (2014)",
+          "page": 15
+        }
+      ]
+    },
+    "steiner-list-1": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Root ancestor in this numbered family list.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 4"
+        }
+      ]
+    },
+    "steiner-list-11": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed as a child of Abraham S.; Hendel is named as partner.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 5"
+        }
+      ]
+    },
+    "steiner-list-11-partner": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Named as the partner of Josef S.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 5"
+        }
+      ]
+    },
+    "steiner-list-111": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under Josef S. and Hendel; Nusbaum is named as partner.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 6"
+        }
+      ]
+    },
+    "steiner-list-111-partner": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Named as the partner of Lina S.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 6"
+        }
+      ]
+    },
+    "steiner-list-112": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under Josef S. and Hendel; Rosa Schlesinger is named as partner.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 7"
+        }
+      ]
+    },
+    "steiner-list-112-partner": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Named as the partner of Max S.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 7"
+        }
+      ]
+    },
+    "steiner-list-113": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under Josef S. and Hendel; Lina Schlesinger is named as partner.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 8"
+        }
+      ]
+    },
+    "steiner-list-113-partner": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Named as the partner of Benedikt S.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 8"
+        }
+      ]
+    },
+    "steiner-list-1121": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under family record 112 (Max S. and Rosa Schlesinger).",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 9"
+        }
+      ]
+    },
+    "steiner-list-1122": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under family record 112 (Max S. and Rosa Schlesinger).",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 10"
+        }
+      ]
+    },
+    "steiner-list-1123": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under family record 112 (Max S. and Rosa Schlesinger).",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 11"
+        }
+      ]
+    },
+    "steiner-list-1124": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under family record 112 (Max S. and Rosa Schlesinger); Ignatz Weber is named as partner.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 12"
+        }
+      ]
+    },
+    "steiner-list-1124-partner": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Named as the partner of Carolina S.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 12"
+        }
+      ]
+    },
+    "steiner-list-1125": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under family record 112 (Max S. and Rosa Schlesinger); Pinkas Drehlich is named as partner.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 13"
+        }
+      ]
+    },
+    "steiner-list-1125-partner": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Named as the partner of Adela S.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 13"
+        }
+      ]
+    },
+    "steiner-list-1126": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under family record 112 (Max S. and Rosa Schlesinger); Ida Tszidon is named as partner.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 14"
+        }
+      ]
+    },
+    "steiner-list-1126-partner": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Named as the partner of Jakob S.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 14"
+        }
+      ]
+    },
+    "steiner-list-1127": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under family record 112 (Max S. and Rosa Schlesinger); Frida Polak is named as partner.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 15"
+        }
+      ]
+    },
+    "steiner-list-1127-partner": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Named as the partner of Julius S.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 15"
+        }
+      ]
+    },
+    "steiner-list-1128": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Listed under family record 112 (Max S. and Rosa Schlesinger); Simon Steiner is named as partner.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 16"
+        }
+      ]
+    },
+    "steiner-list-1128-partner": {
+      "facts": [
+        {
+          "label": "Family relationship",
+          "value": "Named as the partner of Hermina S.",
+          "source": "Steiner list workbook",
+          "location": "Sheet1, row 16"
+        }
+      ]
     }
   }
 }

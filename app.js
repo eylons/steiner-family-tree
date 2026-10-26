@@ -260,7 +260,9 @@ function renderPersonDetails(person) {
     const value = document.createElement("span");
     value.textContent = fact.value;
     const source = document.createElement("cite");
-    source.textContent = `${fact.source}, page ${fact.page}`;
+    source.textContent = fact.location
+      ? `${fact.source}, ${fact.location}`
+      : `${fact.source}, page ${fact.page}`;
     details.append(value, source);
     personFacts.append(term, details);
   }
@@ -481,7 +483,7 @@ Promise.all([
   fetch("data/more-steiners-tree.json"),
   fetch("data/steiner-list-tree.json"),
   fetch("data/person-photos.json", { cache: "no-cache" }),
-  fetch("data/person-profiles.json"),
+  fetch("data/person-profiles.json?v=sourced-profiles-1"),
   fetch("data/feigin-branch.json"),
 ])
   .then(async ([treeResponse, moreSteinerResponse, steinerListResponse, photosResponse, profilesResponse, feiginResponse]) => {

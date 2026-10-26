@@ -18,7 +18,7 @@ On macOS, run `python3 scripts/import_person_photos.py` to match clearly named p
 
 ## Sourced family details and related branches
 
-`data/person-profiles.json` contains a small set of reviewed, source-attributed family facts. Each fact includes the source title and printed page; personal contact details from the source documents are not published. The profile card shows these facts separately from photo matches.
+`data/person-profiles.json` contains reviewed, source-attributed family facts from the family book, numbered family-list workbook, and selected entries in the Lindenfeld family list. Book citations use printed page numbers; workbook and list citations identify a sheet row or entry number. Approximate or uncertain dates are labeled as such. The book is from 2014, so it is not treated as a source for current details about living people. Email addresses, phone numbers, street addresses, and anonymized “Living” identities are not published. The profile card shows these facts separately from photo matches. Where repeated names cannot be matched confidently between charts and records, they remain unlinked.
 
 Select Yael Feigin or Ze'ev Steiner, then choose **Explore the Feigin branch** to view the documented link through Yael's parents and her family with Ze'ev. The branch reuses the people in the main chart where their identities are confirmed. Use the family-view selector to switch between the full Steiner chart, the additional Steiner chart, and the Feigin branch. The additional chart remains separate rather than automatically merging duplicate-looking names.
 
@@ -32,7 +32,7 @@ python3 scripts/export_legacy_chart.py
 python3 scripts/export_steiner_list.py
 ```
 
-The longer Lindenfeld list and the full MyHeritage report contain details about many relatives beyond the reviewed Feigin connection. The raw documents, contact details, and unreviewed branches are not published. The Lindenfeld list remains private until its extended relationships and living relatives can be reviewed.
+The longer Lindenfeld list and the full MyHeritage report contain further information about relatives. Only facts matched to displayed people and included in `data/person-profiles.json` are published; unmatched identities and branches remain unlinked. The raw documents and contact details are not published. The Lindenfeld list remains private until its extended relationships and living relatives can be reviewed.
 
 ## Preview locally
 
