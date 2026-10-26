@@ -63,26 +63,46 @@ function setZoom(value, focusX, focusY) {
   }
 }
 
+function initialZoom(data) {
+  if (!data.initial_zoom) return BASE_ZOOM;
+  const fitZoom = (viewport.clientWidth - 24) / data.width;
+  return Math.min(data.initial_zoom, Math.max(MIN_ZOOM, fitZoom));
+}
+
 function drawChart(data, photos) {
+  const mobileLayout = data.mobile_layout && viewport.clientWidth <= 640
+    ? data.mobile_layout
+    : null;
+  const layoutData = mobileLayout
+    ? {
+      ...data,
+      ...mobileLayout,
+      people: data.people.map((person) => ({
+        ...person,
+        ...mobileLayout.people[person.id],
+      })),
+    }
+    : data;
   const title = svgElement("title", { id: "tree-title" });
-  title.textContent = data.title || "The Steiner family tree";
+  title.textContent = layoutData.title || "The Steiner family tree";
   const description = svgElement("desc", { id: "tree-description" });
-  description.textContent = data.description
+  description.textContent = layoutData.description
     || "An interactive family chart. Select a name to see its family details.";
   svg.replaceChildren(title, description);
-  chartData = data;
+  chartData = layoutData;
   photosByPerson = photos;
   document.querySelector("#people-summary").textContent =
-    data.summary || `${data.people.length} names transcribed from the family’s full-tree spreadsheet`;
-  svg.setAttribute("viewBox", `0 0 ${data.width} ${data.height}`);
-  svg.setAttribute("width", data.width);
-  svg.setAttribute("height", data.height);
+    layoutData.summary || `${layoutData.people.length} names transcribed from the family’s full-tree spreadsheet`;
+  svg.classList.toggle("is-compact-tree", layoutData.compact_chart === true);
+  svg.setAttribute("viewBox", `0 0 ${layoutData.width} ${layoutData.height}`);
+  svg.setAttribute("width", layoutData.width);
+  svg.setAttribute("height", layoutData.height);
 
   const background = svgElement("rect", {
     x: 0,
     y: 0,
-    width: data.width,
-    height: data.height,
+    width: layoutData.width,
+    height: layoutData.height,
     fill: "#fbfaf6",
   });
   svg.append(background);
@@ -92,7 +112,7 @@ function drawChart(data, photos) {
     stroke: "#8b806d",
     "stroke-linecap": "square",
   });
-  for (const line of data.lines) {
+  for (const line of layoutData.lines) {
     lineGroup.append(svgElement("line", {
       x1: line.x1,
       y1: line.y1,
@@ -109,7 +129,7 @@ function drawChart(data, photos) {
     "font-family": "Georgia, 'Times New Roman', serif",
     "font-size": 15,
   });
-  for (const label of data.labels) {
+  for (const label of layoutData.labels) {
     const text = svgElement("text", {
       x: label.x,
       y: label.y,
@@ -125,8 +145,8 @@ function drawChart(data, photos) {
     "font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
     "font-size": 14,
   });
-  const showPersonCards = data.person_cards === true;
-  for (const person of data.people) {
+  const showPersonCards = layoutData.person_cards === true;
+  for (const person of layoutData.people) {
     const nameWidth = Math.max(8, person.width - (showPersonCards ? 18 : 12));
     const group = svgElement("g", {
       class: showPersonCards ? "tree-person has-person-card" : "tree-person",
@@ -192,7 +212,7 @@ function drawChart(data, photos) {
     }
   }
   status.hidden = true;
-  setZoom(BASE_ZOOM);
+  setZoom(initialZoom(layoutData));
   updatePersonStyles();
 }
 
@@ -205,7 +225,7 @@ function updatePersonStyles() {
   }
 }
 
-function selectPerson(id, center) {
+function selectPerson(id, center, scrollToCard = true) {
   const person = chartData.people.find((candidate) => candidate.id === id);
   if (!person) return;
   selectedPersonId = person.id;
@@ -215,7 +235,7 @@ function selectPerson(id, center) {
   personCard.hidden = false;
   renderPersonDetails(person);
   renderPersonPhotos(person.id);
-  personCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (scrollToCard) personCard.scrollIntoView({ behavior: "smooth", block: "start" });
   searchResults.hidden = true;
   updatePersonStyles();
 
@@ -345,7 +365,7 @@ function openPhotograph(button) {
 document.querySelector("#zoom-in").addEventListener("click", () => setZoom(zoom + 0.15));
 document.querySelector("#zoom-out").addEventListener("click", () => setZoom(zoom - 0.15));
 document.querySelector("#fit-chart").addEventListener("click", () => {
-  setZoom(BASE_ZOOM);
+  setZoom(initialZoom(chartData));
   viewport.scrollTo({ left: 0, top: 0, behavior: "smooth" });
 });
 document.querySelector("#close-person").addEventListener("click", () => {
@@ -378,7 +398,10 @@ function showTreeView(treeId, selectedId = null) {
   personCard.hidden = true;
   selectedPersonId = null;
   if (selectedId && viewData.people.some((person) => person.id === selectedId)) {
-    selectPerson(selectedId, false);
+    selectPerson(selectedId, false, false);
+  }
+  if (treeId === "feigin") {
+    document.querySelector("#tree").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 

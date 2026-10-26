@@ -495,9 +495,13 @@ h2 {
 .family-tree {
   display: block;
   max-width: none;
-  margin-bottom: clamp(320px, 55vh, 600px);
+  margin: 0 auto clamp(320px, 55vh, 600px);
   overflow: visible;
   transform-origin: top left;
+}
+
+.family-tree.is-compact-tree {
+  margin-bottom: 20px;
 }
 
 .tree-person {
@@ -514,6 +518,10 @@ h2 {
   fill: #fffefa;
   stroke: #b9c4b9;
   stroke-width: 1.3px;
+}
+
+.tree-person.has-person-card text {
+  stroke-width: 0;
 }
 
 .tree-person.has-person-card:hover .person-hit-area {

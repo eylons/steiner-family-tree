@@ -22,6 +22,8 @@ On macOS, run `python3 scripts/import_person_photos.py` to match clearly named p
 
 Select Yael Feigin or Ze'ev Steiner, then choose **Explore the Feigin branch** to view the documented link through Yael's parents and her family with Ze'ev. The branch reuses the people in the main chart where their identities are confirmed. Use the family-view selector to switch between the full Steiner chart, the additional Steiner chart, and the Feigin branch. The additional chart remains separate rather than automatically merging duplicate-looking names.
 
+Opening the Feigin branch brings the chart section into view. Its compact layout adapts to narrow screens, while the original wide charts keep their own zoom and scroll behavior.
+
 The original `docs/` files stay private. Reviewed family facts, cited source page numbers, and chart transcriptions are published as website data. To regenerate the two additional workbook views, install their local extraction dependency and run:
 
 ```sh
