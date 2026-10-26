@@ -29,7 +29,6 @@ ALIASES = {
 UNMATCHED_PERSON_LABELS = {"family", "more"}
 SUPPORTED_PHOTO_TYPES = {".jpg", ".jpeg", ".png"}
 PERSON_ID_REDIRECTS = {
-    "50-21": "41-54",
 }
 EXPLICIT_GALLERY_ASSIGNMENTS = {
     "more_pics/Yael": "50-9",

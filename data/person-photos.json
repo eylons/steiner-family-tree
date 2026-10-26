@@ -1033,6 +1033,18 @@
         "src": "assets/person-photos/tony-aharon-weber-2eba3db8d3.jpg",
         "thumbnail": "assets/person-photos/thumbnails/tony-aharon-weber-2eba3db8d3.jpg"
       }
+    ],
+    "50-21": [
+      {
+        "filename": "David Steiner tractor.png",
+        "src": "assets/person-photos/david-steiner-tractor.png",
+        "thumbnail": "assets/person-photos/thumbnails/david-steiner-tractor.png"
+      },
+      {
+        "filename": "David Steiner letter 1967.jpg",
+        "src": "assets/person-photos/david-steiner-letter-1967.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/david-steiner-letter-1967.jpg"
+      }
     ]
   }
 }
