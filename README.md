@@ -16,6 +16,22 @@ swift scripts/stitch_photos.swift
 
 On macOS, run `python3 scripts/import_person_photos.py` to match clearly named photos in `steiner_gallery/` to people in `data/tree.json`. Photos in `more_pics/Yael/` are explicitly assigned to Yael Feigin (row 50, column 9). The script copies matched photos into the published assets, reuses existing assets when the source image is an exact duplicate, creates smaller thumbnails, and writes `data/person-photos.json`. Names that cannot be identified confidently from their filenames are left unassigned. Original photo folders are excluded from the published repository. Select a person in the chart to view their matched photos.
 
+## Sourced family details and related branches
+
+`data/person-profiles.json` contains a small set of reviewed, source-attributed family facts. Each fact includes the source title and printed page; personal contact details from the source documents are not published. The profile card shows these facts separately from photo matches.
+
+Select Yael Feigin or Ze'ev Steiner, then choose **Explore the Feigin branch** to view the documented link through Yael's parents and her family with Ze'ev. The branch reuses the people in the main chart where their identities are confirmed. Use the family-view selector to switch between the full Steiner chart, the additional Steiner chart, and the Feigin branch. The additional chart remains separate rather than automatically merging duplicate-looking names.
+
+The original `docs/` files stay private. Reviewed family facts, cited source page numbers, and chart transcriptions are published as website data. To regenerate the two additional workbook views, install their local extraction dependency and run:
+
+```sh
+python3 -m pip install -r requirements-docs.txt
+python3 scripts/export_legacy_chart.py
+python3 scripts/export_steiner_list.py
+```
+
+The longer Lindenfeld list and the full MyHeritage report contain details about many relatives beyond the reviewed Feigin connection. The raw documents, contact details, and unreviewed branches are not published. The Lindenfeld list remains private until its extended relationships and living relatives can be reviewed.
+
 ## Preview locally
 
 From the project folder, run:

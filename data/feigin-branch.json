@@ -1,0 +1,104 @@
+{
+  "title": "The Feigin branch through Yael",
+  "summary": "Family links recorded in the 2014 family book and the Adi–Eylon–Ofir workbook",
+  "width": 920,
+  "height": 520,
+  "people": [
+    {
+      "id": "feigin-schlom",
+      "name": "Schlomo Feigin",
+      "first_name": "Schlomo",
+      "last_name": "Feigin",
+      "x": 200,
+      "y": 86,
+      "last_name_y": 106,
+      "width": 180,
+      "font_size": 14,
+      "source_label": "MyHeritage family book (2014) · page 207"
+    },
+    {
+      "id": "feigin-hava",
+      "name": "Hava Feigen [Buerger]",
+      "first_name": "Hava",
+      "last_name": "Feigen [Buerger]",
+      "x": 490,
+      "y": 86,
+      "last_name_y": 106,
+      "width": 180,
+      "font_size": 14,
+      "source_label": "MyHeritage family book (2014) · page 207"
+    },
+    {
+      "id": "50-9",
+      "name": "Yael Feigin",
+      "first_name": "Yael",
+      "last_name": "Feigin",
+      "x": 350,
+      "y": 222,
+      "last_name_y": 242,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Original chart · row 50, column 9"
+    },
+    {
+      "id": "50-13",
+      "name": "Ze'ev Steiner",
+      "first_name": "Ze'ev",
+      "last_name": "Steiner",
+      "x": 600,
+      "y": 222,
+      "last_name_y": 242,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Original chart · row 50, column 13"
+    },
+    {
+      "id": "60-7",
+      "name": "Eylon Steiner",
+      "first_name": "Eylon",
+      "last_name": "Steiner",
+      "x": 95,
+      "y": 400,
+      "last_name_y": 420,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Adi–Eylon–Ofir workbook · family branch"
+    },
+    {
+      "id": "60-10",
+      "name": "Ofir Steiner",
+      "first_name": "Ofir",
+      "last_name": "Steiner",
+      "x": 350,
+      "y": 400,
+      "last_name_y": 420,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Adi–Eylon–Ofir workbook · family branch"
+    },
+    {
+      "id": "60-17",
+      "name": "Adi Steiner",
+      "first_name": "Adi",
+      "last_name": "Steiner",
+      "x": 605,
+      "y": 400,
+      "last_name_y": 420,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Adi–Eylon–Ofir workbook · family branch"
+    }
+  ],
+  "labels": [],
+  "lines": [
+    { "x1": 380, "y1": 118, "x2": 490, "y2": 118, "width": 1.8 },
+    { "x1": 435, "y1": 118, "x2": 435, "y2": 168, "width": 1.15 },
+    { "x1": 435, "y1": 168, "x2": 435, "y2": 206, "width": 1.15 },
+    { "x1": 520, "y1": 252, "x2": 600, "y2": 252, "width": 1.8 },
+    { "x1": 560, "y1": 252, "x2": 560, "y2": 330, "width": 1.15 },
+    { "x1": 180, "y1": 330, "x2": 690, "y2": 330, "width": 1.15 },
+    { "x1": 180, "y1": 330, "x2": 180, "y2": 386, "width": 1.15 },
+    { "x1": 435, "y1": 330, "x2": 435, "y2": 386, "width": 1.15 },
+    { "x1": 690, "y1": 330, "x2": 690, "y2": 386, "width": 1.15 }
+  ]
+}

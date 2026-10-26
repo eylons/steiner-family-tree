@@ -1,0 +1,36 @@
+{
+  "profiles": {
+    "2-82": {
+      "facts": [
+        {
+          "label": "Birth estimate",
+          "value": "Between 1770 and 1800; the source marks this estimate as unreliable",
+          "source": "MyHeritage family book (2014)",
+          "page": 16
+        }
+      ]
+    },
+    "50-9": {
+      "facts": [
+        {
+          "label": "Parents",
+          "value": "Schlomo Feigin and Hava Feigen [Buerger]",
+          "source": "MyHeritage family book (2014)",
+          "page": 207
+        }
+      ],
+      "related_tree": "feigin"
+    },
+    "50-13": {
+      "facts": [
+        {
+          "label": "Born",
+          "value": "18 September 1940 (as reported; the source marks some birth details uncertain)",
+          "source": "MyHeritage family book (2014)",
+          "page": 4
+        }
+      ],
+      "related_tree": "feigin"
+    }
+  }
+}

@@ -13,9 +13,23 @@ const personCard = document.querySelector("#person-card");
 const personName = document.querySelector("#person-name");
 const personSource = document.querySelector("#person-source");
 const personPhotoGrid = document.querySelector("#person-photo-grid");
+const personDetails = document.querySelector("#person-details");
+const personFacts = document.querySelector("#person-facts");
+const personRelated = document.querySelector("#person-related");
+const relatedTreeNotice = document.querySelector("#related-tree-notice");
+const relatedTreeButton = document.querySelector("#open-related-tree");
+const treeViewSelect = document.querySelector("#tree-view-select");
+const relatedTreeDescription = document.querySelector("#related-tree-description");
 
 let chartData;
+let mainTreeData;
+let moreSteinerTreeData;
+let steinerListTreeData;
+let feiginTreeData;
+let mainPhotosByPerson = {};
 let photosByPerson = {};
+let profilesByPerson = {};
+let activeTreeId = "steiner";
 let zoom = BASE_ZOOM;
 let selectedPersonId = null;
 let matchingIds = new Set();
@@ -50,10 +64,16 @@ function setZoom(value, focusX, focusY) {
 }
 
 function drawChart(data, photos) {
+  const title = svgElement("title", { id: "tree-title" });
+  title.textContent = data.title || "The Steiner family tree";
+  const description = svgElement("desc", { id: "tree-description" });
+  description.textContent = data.description
+    || "An interactive family chart. Select a name to see its family details.";
+  svg.replaceChildren(title, description);
   chartData = data;
   photosByPerson = photos;
   document.querySelector("#people-summary").textContent =
-    `${data.people.length} names transcribed from the family’s full-tree spreadsheet`;
+    data.summary || `${data.people.length} names transcribed from the family’s full-tree spreadsheet`;
   svg.setAttribute("viewBox", `0 0 ${data.width} ${data.height}`);
   svg.setAttribute("width", data.width);
   svg.setAttribute("height", data.height);
@@ -187,8 +207,10 @@ function selectPerson(id, center) {
   if (!person) return;
   selectedPersonId = person.id;
   personName.textContent = person.name;
-  personSource.textContent = `Original chart · row ${person.row}, column ${person.column}`;
+  personSource.textContent = person.source_label
+    || `Original chart · row ${person.row}, column ${person.column}`;
   personCard.hidden = false;
+  renderPersonDetails(person);
   renderPersonPhotos(person.id);
   personCard.scrollIntoView({ behavior: "smooth", block: "start" });
   searchResults.hidden = true;
@@ -203,6 +225,27 @@ function selectPerson(id, center) {
       behavior: "smooth",
     });
   }
+}
+
+function renderPersonDetails(person) {
+  const profile = profilesByPerson[person.id] || {};
+  personFacts.replaceChildren();
+  for (const fact of profile.facts || []) {
+    const term = document.createElement("dt");
+    term.textContent = fact.label;
+    const details = document.createElement("dd");
+    const value = document.createElement("span");
+    value.textContent = fact.value;
+    const source = document.createElement("cite");
+    source.textContent = `${fact.source}, page ${fact.page}`;
+    details.append(value, source);
+    personFacts.append(term, details);
+  }
+  personDetails.hidden = personFacts.childElementCount === 0;
+  personRelated.hidden = profile.related_tree !== "feigin";
+  relatedTreeButton.textContent = activeTreeId === "feigin"
+    ? "Back to the Steiner chart"
+    : "Explore the Feigin branch";
 }
 
 function renderPersonPhotos(id) {
@@ -274,7 +317,9 @@ function renderResults(query) {
     name.textContent = person.name;
     const source = document.createElement("span");
     source.className = "search-result-meta";
-    source.textContent = `row ${person.row}`;
+    source.textContent = person.row
+      ? `row ${person.row}`
+      : (person.source_label || "Family branch").split(" · ")[0];
     button.append(name, source);
     button.addEventListener("click", () => {
       searchInput.value = person.name;
@@ -304,6 +349,48 @@ document.querySelector("#close-person").addEventListener("click", () => {
   selectedPersonId = null;
   personCard.hidden = true;
   updatePersonStyles();
+});
+function showTreeView(treeId, selectedId = null) {
+  activeTreeId = treeId;
+  treeViewSelect.value = treeId;
+  searchInput.value = "";
+  matchingIds.clear();
+  searchResults.hidden = true;
+  const viewData = {
+    steiner: mainTreeData,
+    "more-steiner": moreSteinerTreeData,
+    "steiner-list": steinerListTreeData,
+    feigin: feiginTreeData,
+  }[treeId];
+  const photos = treeId === "steiner" || treeId === "feigin" ? mainPhotosByPerson : {};
+  drawChart(viewData, photos);
+  viewport.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  const hasRelatedView = treeId !== "steiner";
+  relatedTreeNotice.hidden = !hasRelatedView;
+  relatedTreeDescription.textContent = treeId === "feigin"
+    ? "Viewing the Feigin branch connected through Yael."
+    : treeId === "more-steiner"
+      ? "Viewing the additional chart as a separate source; identities are not merged automatically."
+      : "Viewing the numbered source list as a separate branch; abbreviated names are not merged automatically.";
+  personCard.hidden = true;
+  selectedPersonId = null;
+  if (selectedId && viewData.people.some((person) => person.id === selectedId)) {
+    selectPerson(selectedId, false);
+  }
+}
+
+relatedTreeButton.addEventListener("click", () => {
+  if (activeTreeId === "feigin") showTreeView("steiner", "50-9");
+  else showTreeView("feigin", "50-9");
+});
+treeViewSelect.addEventListener("change", () => {
+  const selectedId = chartData.people.some((person) => person.id === selectedPersonId)
+    ? selectedPersonId
+    : null;
+  showTreeView(treeViewSelect.value, selectedId);
+});
+document.querySelector("#return-to-steiner-tree").addEventListener("click", () => {
+  showTreeView("steiner", "50-9");
 });
 searchInput.addEventListener("input", () => renderResults(searchInput.value));
 searchInput.addEventListener("keydown", (event) => {
@@ -365,12 +452,33 @@ document.querySelector("#dialog-close").addEventListener("click", () => {
 
 Promise.all([
   fetch("data/tree.json?v=names-fit-3"),
+  fetch("data/more-steiners-tree.json"),
+  fetch("data/steiner-list-tree.json"),
   fetch("data/person-photos.json", { cache: "no-cache" }),
+  fetch("data/person-profiles.json"),
+  fetch("data/feigin-branch.json"),
 ])
-  .then(async ([treeResponse, photosResponse]) => {
+  .then(async ([treeResponse, moreSteinerResponse, steinerListResponse, photosResponse, profilesResponse, feiginResponse]) => {
     if (!treeResponse.ok) throw new Error(`Could not load family chart data (${treeResponse.status}).`);
+    if (!moreSteinerResponse.ok) throw new Error(`Could not load the additional Steiner chart (${moreSteinerResponse.status}).`);
+    if (!steinerListResponse.ok) throw new Error(`Could not load the numbered Steiner list (${steinerListResponse.status}).`);
     if (!photosResponse.ok) throw new Error(`Could not load matched family photos (${photosResponse.status}).`);
-    const [tree, photoData] = await Promise.all([treeResponse.json(), photosResponse.json()]);
+    if (!profilesResponse.ok) throw new Error(`Could not load sourced family details (${profilesResponse.status}).`);
+    if (!feiginResponse.ok) throw new Error(`Could not load the Feigin family branch (${feiginResponse.status}).`);
+    const [tree, moreSteinerTree, steinerListTree, photoData, profileData, feiginTree] = await Promise.all([
+      treeResponse.json(),
+      moreSteinerResponse.json(),
+      steinerListResponse.json(),
+      photosResponse.json(),
+      profilesResponse.json(),
+      feiginResponse.json(),
+    ]);
+    mainTreeData = tree;
+    moreSteinerTreeData = moreSteinerTree;
+    steinerListTreeData = steinerListTree;
+    feiginTreeData = feiginTree;
+    profilesByPerson = profileData.profiles;
+    mainPhotosByPerson = photoData.photos;
     drawChart(tree, photoData.photos);
   })
   .catch((error) => {

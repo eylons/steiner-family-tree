@@ -383,6 +383,17 @@ h2 {
   gap: 6px;
 }
 
+.tree-view-select {
+  max-width: 190px;
+  height: 33px;
+  padding: 0 27px 0 9px;
+  border: 1px solid #ded8ca;
+  border-radius: 4px;
+  background: var(--white);
+  color: #39413c;
+  font-size: 10px;
+}
+
 .zoom-label {
   min-width: 37px;
   margin-right: 3px;
@@ -412,6 +423,37 @@ h2 {
   padding: 0 12px;
   margin-left: 3px;
   font-size: 10px;
+}
+
+.related-tree-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 13px;
+  margin: 10px 0;
+  border: 1px solid #d8ded7;
+  border-radius: 4px;
+  background: #eef2ec;
+  color: #526357;
+  font-size: 11px;
+}
+
+.related-tree-notice button,
+.related-tree-button {
+  padding: 8px 11px;
+  border: 1px solid #cbd7cc;
+  border-radius: 4px;
+  background: #fff;
+  color: #385c4c;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.related-tree-notice button:hover,
+.related-tree-button:hover {
+  background: #e0e9df;
 }
 
 .icon-button:hover,
@@ -677,6 +719,57 @@ h2 {
 
 .close-person:hover {
   background: #dce6dc;
+}
+
+.person-details,
+.person-related {
+  margin: 17px 0 0 47px;
+  padding-top: 14px;
+  border-top: 1px solid #d8ded7;
+}
+
+.person-details h4,
+.person-related h4 {
+  margin: 0 0 10px;
+  color: #68736a;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.person-facts {
+  display: grid;
+  grid-template-columns: minmax(75px, 0.25fr) minmax(0, 1fr);
+  gap: 9px 14px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.person-facts dt {
+  color: #68736a;
+  font-weight: 650;
+}
+
+.person-facts dd {
+  display: grid;
+  gap: 3px;
+  margin: 0;
+  color: #39413a;
+}
+
+.person-facts cite {
+  color: #777d75;
+  font-size: 9px;
+  font-style: normal;
+}
+
+.person-related p {
+  margin: 0 0 10px;
+  color: #68736a;
+  font-size: 11px;
+  line-height: 1.5;
 }
 
 .photo-section {
@@ -974,6 +1067,12 @@ h2 {
 
   .toolbar-actions {
     align-self: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .related-tree-notice {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .tree-viewport {
@@ -1029,6 +1128,16 @@ h2 {
   .site-nav {
     gap: 11px;
     font-size: 9px;
+  }
+
+  .toolbar-actions {
+    align-self: stretch;
+    justify-content: flex-end;
+  }
+
+  .tree-view-select {
+    flex: 1 1 125px;
+    max-width: 100%;
   }
 
   .brand {
