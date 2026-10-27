@@ -82,7 +82,11 @@ function setZoom(value, focusX, focusY) {
   const ratio = zoom / previous;
   const oldLeft = viewport.scrollLeft;
   const oldTop = viewport.scrollTop;
-  svg.style.width = `${chartData.width * zoom}px`;
+  // Pad both sides by half the viewport so the first and last people can scroll to the middle.
+  const gutter = viewport.clientWidth / 2 / zoom;
+  const paddedWidth = chartData.width + gutter * 2;
+  svg.setAttribute("viewBox", `${-gutter} 0 ${paddedWidth} ${chartData.height}`);
+  svg.style.width = `${paddedWidth * zoom}px`;
   svg.style.height = `${chartData.height * zoom}px`;
   zoomLabel.textContent = `${Math.round(zoom * 100)}%`;
 
@@ -269,6 +273,7 @@ function drawChart(data, photos) {
   }
   status.hidden = true;
   setZoom(initialZoom(layoutData));
+  viewport.scrollLeft = viewport.clientWidth / 2;
   updatePersonStyles();
 }
 
@@ -448,7 +453,7 @@ document.querySelector("#zoom-in").addEventListener("click", () => setZoom(zoom 
 document.querySelector("#zoom-out").addEventListener("click", () => setZoom(zoom - 0.15));
 document.querySelector("#fit-chart").addEventListener("click", () => {
   setZoom(initialZoom(chartData));
-  viewport.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  viewport.scrollTo({ left: viewport.clientWidth / 2, top: 0, behavior: "smooth" });
 });
 document.querySelector("#close-person").addEventListener("click", () => {
   selectedPersonId = null;
@@ -470,7 +475,7 @@ function showTreeView(treeId, selectedId = null) {
   }[treeId];
   const photos = mainPhotosByPerson;
   drawChart(viewData, photos);
-  viewport.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+  viewport.scrollTo({ left: viewport.clientWidth / 2, top: 0, behavior: "smooth" });
   const hasRelatedView = treeId !== "steiner";
   relatedTreeNotice.hidden = !hasRelatedView;
   relatedTreeDescription.textContent = treeId === "feigin"

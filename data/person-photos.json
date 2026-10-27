@@ -697,18 +697,6 @@
         "thumbnail": "assets/person-photos/thumbnails/sha-ar-hagolan-juda-erzs-sandor-lanii-fee19b4c1f.jpg"
       }
     ],
-    "60-21": [
-      {
-        "filename": "Erzsi, zvi, Lani, Trude, Dadi, Hermina and Yair, Lior, Zevi,.jpg",
-        "src": "assets/person-photos/erzsi-zvi-lani-trude-dadi-hermina-and-yair-lior-zevi-06a7377a93.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/erzsi-zvi-lani-trude-dadi-hermina-and-yair-lior-zevi-06a7377a93.jpg"
-      },
-      {
-        "filename": "Trudeh Lior Dany - Galpaz.jpg",
-        "src": "assets/person-photos/trudeh-lior-dany-galpaz-e2d33eb6ce.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/trudeh-lior-dany-galpaz-e2d33eb6ce.jpg"
-      }
-    ],
     "25-98": [
       {
         "filename": "Family Jacob Steiner.jpg",
@@ -927,18 +915,6 @@
         "thumbnail": "assets/person-photos/thumbnails/lina-steiner-7d5fdaf497.jpg"
       }
     ],
-    "50-13": [
-      {
-        "filename": "Moshe Ze'ev Lindenfeld, 1881-1931.jpg",
-        "src": "assets/person-photos/moshe-ze-ev-lindenfeld-1881-1931-56b6c98591.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/moshe-ze-ev-lindenfeld-1881-1931-56b6c98591.jpg"
-      },
-      {
-        "filename": "Willhelm (Moshe Ze'ev) Lindenfeld.jpg",
-        "src": "assets/person-photos/willhelm-moshe-ze-ev-lindenfeld-26544a45ac.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/willhelm-moshe-ze-ev-lindenfeld-26544a45ac.jpg"
-      }
-    ],
     "15-24": [
       {
         "filename": "Rosa Schlezinger.jpg",
@@ -1062,9 +1038,9 @@
     ],
     "60-3": [
       {
-        "filename": "Google Photos · Idit Neuman",
-        "src": "assets/person-photos/google-photos-idit-neuman.png",
-        "thumbnail": "assets/person-photos/thumbnails/google-photos-idit-neuman.png"
+        "filename": "Idit Neuman",
+        "src": "assets/person-photos/idit-neuman-face.jpg",
+        "thumbnail": "assets/person-photos/thumbnails/idit-neuman-face.jpg"
       }
     ],
     "60-14": [
@@ -1128,6 +1104,34 @@
         "filename": "Google Photos · Eytan Steiner",
         "src": "assets/person-photos/google-photos-eitan-steiner.png",
         "thumbnail": "assets/person-photos/thumbnails/google-photos-eitan-steiner.png"
+      }
+    ],
+    "50-13": [
+      {
+        "filename": "Google Photos · Ze'ev Steiner",
+        "src": "assets/person-photos/google-photos-zeev-steiner.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-zeev-steiner.png"
+      }
+    ],
+    "60-17": [
+      {
+        "filename": "Google Photos · Adi Steiner",
+        "src": "assets/person-photos/google-photos-adi-steiner.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-adi-steiner.png"
+      }
+    ],
+    "60-21": [
+      {
+        "filename": "Google Photos · Lior Haimi",
+        "src": "assets/person-photos/google-photos-lior-haimi.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-lior-haimi.png"
+      }
+    ],
+    "neuman-yariv": [
+      {
+        "filename": "Google Photos · Yariv Neuman",
+        "src": "assets/person-photos/google-photos-yariv-neuman.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-yariv-neuman.png"
       }
     ]
   }
