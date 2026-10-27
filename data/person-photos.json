@@ -1191,6 +1191,97 @@
         "src": "assets/person-photos/yosef-hay-stav.png",
         "thumbnail": "assets/person-photos/thumbnails/yosef-hay-stav.png"
       }
+    ],
+    "feigin-reoven": [
+      {
+        "filename": "Geni chart · Reoven Feigin",
+        "src": "assets/person-photos/geni-feigin-reoven.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-reoven.png"
+      }
+    ],
+    "feigin-sonia": [
+      {
+        "filename": "Geni chart · Sonia Feigin",
+        "src": "assets/person-photos/geni-feigin-sonia.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-sonia.png"
+      }
+    ],
+    "feigin-schlom": [
+      {
+        "filename": "Geni chart · Schlomo Feigin",
+        "src": "assets/person-photos/geni-feigin-shlomo.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-shlomo.png"
+      }
+    ],
+    "feigin-eliyahu-birger": [
+      {
+        "filename": "Geni chart · Eliyahu Birger",
+        "src": "assets/person-photos/geni-feigin-eliyahu.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-eliyahu.png"
+      }
+    ],
+    "feigin-hana-birger": [
+      {
+        "filename": "Geni chart · Hana Birger",
+        "src": "assets/person-photos/geni-feigin-hana.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-hana.png"
+      }
+    ],
+    "feigin-hava": [
+      {
+        "filename": "Geni chart · Hava Feigin (Birger)",
+        "src": "assets/person-photos/geni-feigin-hava.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-hava.png"
+      }
+    ],
+    "feigin-nechama": [
+      {
+        "filename": "Geni chart · Nechama Feigin",
+        "src": "assets/person-photos/geni-feigin-nechama.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-nechama.png"
+      }
+    ],
+    "feigin-nili": [
+      {
+        "filename": "Geni chart · Nili Lahav (Feigin)",
+        "src": "assets/person-photos/geni-feigin-nili.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-nili.png"
+      }
+    ],
+    "feigin-david-lahav": [
+      {
+        "filename": "Geni chart · David Lahav",
+        "src": "assets/person-photos/geni-feigin-david.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-david.png"
+      }
+    ],
+    "feigin-idan": [
+      {
+        "filename": "Geni chart · Idan Lahav",
+        "src": "assets/person-photos/geni-feigin-idan.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-idan.png"
+      }
+    ],
+    "feigin-amit-lahav": [
+      {
+        "filename": "Geni chart · Amit Lahav",
+        "src": "assets/person-photos/geni-feigin-amit.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-amit.png"
+      }
+    ],
+    "feigin-neora": [
+      {
+        "filename": "Geni chart · Neora Rivka Lahav (Cohen)",
+        "src": "assets/person-photos/geni-feigin-neora.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-neora.png"
+      }
+    ],
+    "feigin-ariel": [
+      {
+        "filename": "Geni chart · Ariel Lahav",
+        "src": "assets/person-photos/geni-feigin-ariel.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-feigin-ariel.png"
+      }
     ]
   }
 }

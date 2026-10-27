@@ -1,44 +1,261 @@
 {
   "title": "The Feigin and Buerger families through Yael",
-  "summary": "Available records document Yael's parents but no earlier Feigin or Buerger generations.",
+  "summary": "Transcribed from the Geni Steiner-Feigen and Feigin chart screenshots, and the MyHeritage family book for the Feigin entries. Parents of Hava and Shlomo are placed from the chart.",
   "person_cards": true,
   "compact_chart": true,
   "initial_zoom": 1.35,
-  "width": 920,
-  "height": 470,
+  "width": 4270,
+  "height": 880,
+  "source": "Geni chart screenshots",
   "people": [
+    {
+      "id": "feigin-reoven",
+      "name": "Reoven Feigin",
+      "first_name": "Reoven",
+      "last_name": "Feigin",
+      "x": 2915.0,
+      "y": 80,
+      "last_name_y": 100,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-sonia",
+      "name": "Sonia Feigin",
+      "first_name": "Sonia",
+      "last_name": "Feigin",
+      "x": 3115.0,
+      "y": 80,
+      "last_name_y": 100,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-eliyahu-birger",
+      "name": "Eliyahu Birger",
+      "first_name": "Eliyahu",
+      "last_name": "Birger",
+      "x": 640.0,
+      "y": 80,
+      "last_name_y": 100,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1883–1962"
+    },
+    {
+      "id": "feigin-hana-birger",
+      "name": "Hana Birger",
+      "first_name": "Hana",
+      "last_name": "Birger",
+      "x": 840.0,
+      "y": 80,
+      "last_name_y": 100,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1888–1957"
+    },
+    {
+      "id": "feigin-mordechai",
+      "name": "Mordechai Ben-Artzi (Birger)",
+      "first_name": "Mordechai",
+      "last_name": "Ben-Artzi (Birger)",
+      "x": 40.0,
+      "y": 240,
+      "last_name_y": 260,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1912–1998"
+    },
+    {
+      "id": "feigin-eyle",
+      "name": "Eyle Ayala Elka Ben-Artzi (Feldman)",
+      "first_name": "Eyle Ayala Elka",
+      "last_name": "Ben-Artzi (Feldman)",
+      "x": 240.0,
+      "y": 240,
+      "last_name_y": 260,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1912–1999"
+    },
+    {
+      "id": "feigin-yaakov",
+      "name": "Ya'akov Stilman",
+      "first_name": "Ya'akov",
+      "last_name": "Stilman",
+      "x": 440.0,
+      "y": 240,
+      "last_name_y": 260,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1909–1996"
+    },
+    {
+      "id": "feigin-shoshana",
+      "name": "Shoshana Stilman (Birger)",
+      "first_name": "Shoshana",
+      "last_name": "Stilman (Birger)",
+      "x": 640.0,
+      "y": 240,
+      "last_name_y": 260,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1918–1993"
+    },
+    {
+      "id": "feigin-hertzel",
+      "name": "Hertzel Grinboim",
+      "first_name": "Hertzel",
+      "last_name": "Grinboim",
+      "x": 840.0,
+      "y": 240,
+      "last_name_y": 260,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-sara",
+      "name": "Sara Grinboim (Birger)",
+      "first_name": "Sara",
+      "last_name": "Grinboim (Birger)",
+      "x": 1040.0,
+      "y": 240,
+      "last_name_y": 260,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-chaim",
+      "name": "Chaim Ben-Artzi (Birger)",
+      "first_name": "Chaim",
+      "last_name": "Ben-Artzi (Birger)",
+      "x": 1240.0,
+      "y": 240,
+      "last_name_y": 260,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-doobit",
+      "name": "Doobit Ben-Artzi (Bar)",
+      "first_name": "Doobit",
+      "last_name": "Ben-Artzi (Bar)",
+      "x": 1440.0,
+      "y": 240,
+      "last_name_y": 260,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1919–2016"
+    },
     {
       "id": "feigin-schlom",
       "name": "Schlomo Feigin",
       "first_name": "Schlomo",
       "last_name": "Feigin",
-      "x": 230,
-      "y": 100,
-      "last_name_y": 120,
-      "width": 180,
+      "x": 2915.0,
+      "y": 240,
+      "last_name_y": 260,
+      "width": 170,
       "font_size": 14,
       "source_label": "MyHeritage family book (2014) · page 207"
     },
     {
       "id": "feigin-hava",
-      "name": "Hava Feigen [Buerger]",
+      "name": "Hava Feigin (Birger)",
       "first_name": "Hava",
-      "last_name": "Feigen [Buerger]",
-      "x": 510,
-      "y": 100,
-      "last_name_y": 120,
-      "width": 180,
+      "last_name": "Feigin (Birger)",
+      "x": 3115.0,
+      "y": 240,
+      "last_name_y": 260,
+      "width": 170,
       "font_size": 14,
       "source_label": "MyHeritage family book (2014) · page 207"
+    },
+    {
+      "id": "feigin-shmuel",
+      "name": "Shmuel Feigin",
+      "first_name": "Shmuel",
+      "last_name": "Feigin",
+      "x": 3040.0,
+      "y": 400,
+      "last_name_y": 420,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-ester",
+      "name": "Ester Feigin (Cohen)",
+      "first_name": "Ester",
+      "last_name": "Feigin (Cohen)",
+      "x": 3240.0,
+      "y": 400,
+      "last_name_y": 420,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-nili",
+      "name": "Nili Lahav (Feigin)",
+      "first_name": "Nili",
+      "last_name": "Lahav (Feigin)",
+      "x": 3690.0,
+      "y": 400,
+      "last_name_y": 420,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-david-lahav",
+      "name": "David Lahav",
+      "first_name": "David",
+      "last_name": "Lahav",
+      "x": 3890.0,
+      "y": 400,
+      "last_name_y": 420,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-amit-lahav",
+      "name": "Amit Lahav",
+      "first_name": "Amit",
+      "last_name": "Lahav",
+      "x": 3840.0,
+      "y": 560,
+      "last_name_y": 580,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-neora",
+      "name": "Neora Rivka Lahav (Cohen)",
+      "first_name": "Neora Rivka",
+      "last_name": "Lahav (Cohen)",
+      "x": 4040.0,
+      "y": 560,
+      "last_name_y": 580,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1984–"
     },
     {
       "id": "50-9",
       "name": "Yael Feigin",
       "first_name": "Yael",
       "last_name": "Feigin",
-      "x": 375,
-      "y": 235,
-      "last_name_y": 255,
+      "x": 2140.0,
+      "y": 400,
+      "last_name_y": 420,
       "width": 170,
       "font_size": 14,
       "source_label": "Original chart · row 50, column 9"
@@ -48,82 +265,547 @@
       "name": "Ze'ev Steiner",
       "first_name": "Ze'ev",
       "last_name": "Steiner",
-      "x": 575,
-      "y": 235,
-      "last_name_y": 255,
-      "width": 170,
-      "font_size": 14,
-      "source_label": "Original chart · row 50, column 13"
-    },
-    {
-      "id": "60-7",
-      "name": "Eylon Steiner",
-      "first_name": "Eylon",
-      "last_name": "Steiner",
-      "x": 195,
+      "x": 2340.0,
       "y": 400,
       "last_name_y": 420,
       "width": 170,
       "font_size": 14,
-      "source_label": "Adi–Eylon–Ofir workbook · family branch"
+      "source_label": "Original chart · row 50, column 13"
     },
     {
       "id": "60-10",
       "name": "Ofir Steiner",
       "first_name": "Ofir",
       "last_name": "Steiner",
-      "x": 435,
-      "y": 400,
-      "last_name_y": 420,
+      "x": 2040.0,
+      "y": 560,
+      "last_name_y": 580,
       "width": 170,
       "font_size": 14,
       "source_label": "Adi–Eylon–Ofir workbook · family branch"
+    },
+    {
+      "id": "60-14",
+      "name": "Sarit Asael",
+      "first_name": "Sarit",
+      "last_name": "Asael",
+      "x": 2240.0,
+      "y": 560,
+      "last_name_y": 580,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1979–"
     },
     {
       "id": "60-17",
       "name": "Adi Steiner",
       "first_name": "Adi",
       "last_name": "Steiner",
-      "x": 675,
+      "x": 2540.0,
+      "y": 560,
+      "last_name_y": 580,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Adi–Eylon–Ofir workbook · family branch"
+    },
+    {
+      "id": "60-21",
+      "name": "Lior Haimi",
+      "first_name": "Lior",
+      "last_name": "Haimi",
+      "x": 2740.0,
+      "y": 560,
+      "last_name_y": 580,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1968–"
+    },
+    {
+      "id": "feigin-nechama",
+      "name": "Nechama Feigin",
+      "first_name": "Nechama",
+      "last_name": "Feigin",
+      "x": 3440.0,
       "y": 400,
       "last_name_y": 420,
       "width": 170,
       "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-eraz",
+      "name": "Eraz Feigin",
+      "first_name": "Eraz",
+      "last_name": "Feigin",
+      "x": 3140.0,
+      "y": 560,
+      "last_name_y": 580,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-idan",
+      "name": "Idan Lahav",
+      "first_name": "Idan",
+      "last_name": "Lahav",
+      "x": 3640.0,
+      "y": 560,
+      "last_name_y": 580,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "feigin-ariel",
+      "name": "Ariel Lahav",
+      "first_name": "Ariel",
+      "last_name": "Lahav",
+      "x": 3940.0,
+      "y": 720,
+      "last_name_y": 740,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "60-7",
+      "name": "Eylon Steiner",
+      "first_name": "Eylon",
+      "last_name": "Steiner",
+      "x": 1840.0,
+      "y": 560,
+      "last_name_y": 580,
+      "width": 170,
+      "font_size": 14,
       "source_label": "Adi–Eylon–Ofir workbook · family branch"
+    },
+    {
+      "id": "feigin-ori",
+      "name": "Ori Steiner",
+      "first_name": "Ori",
+      "last_name": "Steiner",
+      "x": 2040.0,
+      "y": 720,
+      "last_name_y": 740,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "69-16",
+      "name": "Eytan Steiner",
+      "first_name": "Eytan",
+      "last_name": "Steiner",
+      "x": 2240.0,
+      "y": 720,
+      "last_name_y": 740,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "69-19",
+      "name": "Shaked Haimi",
+      "first_name": "Shaked",
+      "last_name": "Haimi",
+      "x": 2440.0,
+      "y": 720,
+      "last_name_y": 740,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1995–"
+    },
+    {
+      "id": "69-22",
+      "name": "Amit Haimi",
+      "first_name": "Amit",
+      "last_name": "Haimi",
+      "x": 2640.0,
+      "y": 720,
+      "last_name_y": 740,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 1999–"
+    },
+    {
+      "id": "69-25",
+      "name": "Shir Haimi",
+      "first_name": "Shir",
+      "last_name": "Haimi",
+      "x": 2840.0,
+      "y": 720,
+      "last_name_y": 740,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart · 2002–"
     }
   ],
-  "labels": [],
-  "mobile_layout": {
-    "width": 360,
-    "height": 450,
-    "lines": [
-      { "x1": 160, "y1": 100, "x2": 200, "y2": 100, "width": 1.8 },
-      { "x1": 180, "y1": 100, "x2": 180, "y2": 208, "width": 1.15 },
-      { "x1": 160, "y1": 235, "x2": 200, "y2": 235, "width": 1.8 },
-      { "x1": 180, "y1": 235, "x2": 180, "y2": 350, "width": 1.15 },
-      { "x1": 60, "y1": 350, "x2": 300, "y2": 350, "width": 1.15 },
-      { "x1": 60, "y1": 350, "x2": 60, "y2": 363, "width": 1.15 },
-      { "x1": 180, "y1": 350, "x2": 180, "y2": 363, "width": 1.15 },
-      { "x1": 300, "y1": 350, "x2": 300, "y2": 363, "width": 1.15 }
-    ],
-    "people": {
-      "feigin-schlom": { "x": 10, "y": 100, "last_name_y": 120, "width": 140 },
-      "feigin-hava": { "x": 210, "y": 100, "last_name_y": 120, "width": 140 },
-      "50-9": { "x": 10, "y": 235, "last_name_y": 255, "width": 140 },
-      "50-13": { "x": 210, "y": 235, "last_name_y": 255, "width": 140 },
-      "60-7": { "x": 15, "y": 390, "last_name_y": 410, "width": 90 },
-      "60-10": { "x": 135, "y": 390, "last_name_y": 410, "width": 90 },
-      "60-17": { "x": 255, "y": 390, "last_name_y": 410, "width": 90 }
-    }
-  },
   "lines": [
-    { "x1": 420, "y1": 100, "x2": 500, "y2": 100, "width": 1.8 },
-    { "x1": 460, "y1": 100, "x2": 460, "y2": 208, "width": 1.15 },
-    { "x1": 555, "y1": 235, "x2": 565, "y2": 235, "width": 1.8 },
-    { "x1": 560, "y1": 235, "x2": 560, "y2": 350, "width": 1.15 },
-    { "x1": 280, "y1": 350, "x2": 760, "y2": 350, "width": 1.15 },
-    { "x1": 280, "y1": 350, "x2": 280, "y2": 373, "width": 1.15 },
-    { "x1": 520, "y1": 350, "x2": 520, "y2": 373, "width": 1.15 },
-    { "x1": 760, "y1": 350, "x2": 760, "y2": 373, "width": 1.15 }
-  ]
+    {
+      "x1": 3085.0,
+      "y1": 85,
+      "x2": 3115.0,
+      "y2": 85,
+      "width": 1.8
+    },
+    {
+      "x1": 3100.0,
+      "y1": 117,
+      "x2": 3100.0,
+      "y2": 165,
+      "width": 1.15
+    },
+    {
+      "x1": 3100.0,
+      "y1": 165,
+      "x2": 3100.0,
+      "y2": 165,
+      "width": 1.8
+    },
+    {
+      "x1": 3100.0,
+      "y1": 165,
+      "x2": 3100.0,
+      "y2": 213,
+      "width": 1.15
+    },
+    {
+      "x1": 810.0,
+      "y1": 85,
+      "x2": 840.0,
+      "y2": 85,
+      "width": 1.8
+    },
+    {
+      "x1": 825.0,
+      "y1": 117,
+      "x2": 825.0,
+      "y2": 165,
+      "width": 1.15
+    },
+    {
+      "x1": 225.0,
+      "y1": 165,
+      "x2": 1425.0,
+      "y2": 165,
+      "width": 1.8
+    },
+    {
+      "x1": 225.0,
+      "y1": 165,
+      "x2": 225.0,
+      "y2": 213,
+      "width": 1.15
+    },
+    {
+      "x1": 625.0,
+      "y1": 165,
+      "x2": 625.0,
+      "y2": 213,
+      "width": 1.15
+    },
+    {
+      "x1": 1025.0,
+      "y1": 165,
+      "x2": 1025.0,
+      "y2": 213,
+      "width": 1.15
+    },
+    {
+      "x1": 1425.0,
+      "y1": 165,
+      "x2": 1425.0,
+      "y2": 213,
+      "width": 1.15
+    },
+    {
+      "x1": 210.0,
+      "y1": 245,
+      "x2": 240.0,
+      "y2": 245,
+      "width": 1.8
+    },
+    {
+      "x1": 610.0,
+      "y1": 245,
+      "x2": 640.0,
+      "y2": 245,
+      "width": 1.8
+    },
+    {
+      "x1": 1010.0,
+      "y1": 245,
+      "x2": 1040.0,
+      "y2": 245,
+      "width": 1.8
+    },
+    {
+      "x1": 1410.0,
+      "y1": 245,
+      "x2": 1440.0,
+      "y2": 245,
+      "width": 1.8
+    },
+    {
+      "x1": 3085.0,
+      "y1": 245,
+      "x2": 3115.0,
+      "y2": 245,
+      "width": 1.8
+    },
+    {
+      "x1": 3100.0,
+      "y1": 277,
+      "x2": 3100.0,
+      "y2": 325,
+      "width": 1.15
+    },
+    {
+      "x1": 2325.0,
+      "y1": 325,
+      "x2": 3875.0,
+      "y2": 325,
+      "width": 1.8
+    },
+    {
+      "x1": 2325.0,
+      "y1": 325,
+      "x2": 2325.0,
+      "y2": 373,
+      "width": 1.15
+    },
+    {
+      "x1": 3225.0,
+      "y1": 325,
+      "x2": 3225.0,
+      "y2": 373,
+      "width": 1.15
+    },
+    {
+      "x1": 3525.0,
+      "y1": 325,
+      "x2": 3525.0,
+      "y2": 373,
+      "width": 1.15
+    },
+    {
+      "x1": 3875.0,
+      "y1": 325,
+      "x2": 3875.0,
+      "y2": 373,
+      "width": 1.15
+    },
+    {
+      "x1": 3210.0,
+      "y1": 405,
+      "x2": 3240.0,
+      "y2": 405,
+      "width": 1.8
+    },
+    {
+      "x1": 3225.0,
+      "y1": 437,
+      "x2": 3225.0,
+      "y2": 485,
+      "width": 1.15
+    },
+    {
+      "x1": 3225.0,
+      "y1": 485,
+      "x2": 3225.0,
+      "y2": 485,
+      "width": 1.8
+    },
+    {
+      "x1": 3225.0,
+      "y1": 485,
+      "x2": 3225.0,
+      "y2": 533,
+      "width": 1.15
+    },
+    {
+      "x1": 3860.0,
+      "y1": 405,
+      "x2": 3890.0,
+      "y2": 405,
+      "width": 1.8
+    },
+    {
+      "x1": 3875.0,
+      "y1": 437,
+      "x2": 3875.0,
+      "y2": 485,
+      "width": 1.15
+    },
+    {
+      "x1": 3725.0,
+      "y1": 485,
+      "x2": 4025.0,
+      "y2": 485,
+      "width": 1.8
+    },
+    {
+      "x1": 3725.0,
+      "y1": 485,
+      "x2": 3725.0,
+      "y2": 533,
+      "width": 1.15
+    },
+    {
+      "x1": 4025.0,
+      "y1": 485,
+      "x2": 4025.0,
+      "y2": 533,
+      "width": 1.15
+    },
+    {
+      "x1": 4010.0,
+      "y1": 565,
+      "x2": 4040.0,
+      "y2": 565,
+      "width": 1.8
+    },
+    {
+      "x1": 4025.0,
+      "y1": 597,
+      "x2": 4025.0,
+      "y2": 645,
+      "width": 1.15
+    },
+    {
+      "x1": 4025.0,
+      "y1": 645,
+      "x2": 4025.0,
+      "y2": 645,
+      "width": 1.8
+    },
+    {
+      "x1": 4025.0,
+      "y1": 645,
+      "x2": 4025.0,
+      "y2": 693,
+      "width": 1.15
+    },
+    {
+      "x1": 2310.0,
+      "y1": 405,
+      "x2": 2340.0,
+      "y2": 405,
+      "width": 1.8
+    },
+    {
+      "x1": 2325.0,
+      "y1": 437,
+      "x2": 2325.0,
+      "y2": 485,
+      "width": 1.15
+    },
+    {
+      "x1": 1925.0,
+      "y1": 485,
+      "x2": 2725.0,
+      "y2": 485,
+      "width": 1.8
+    },
+    {
+      "x1": 1925.0,
+      "y1": 485,
+      "x2": 1925.0,
+      "y2": 533,
+      "width": 1.15
+    },
+    {
+      "x1": 2225.0,
+      "y1": 485,
+      "x2": 2225.0,
+      "y2": 533,
+      "width": 1.15
+    },
+    {
+      "x1": 2725.0,
+      "y1": 485,
+      "x2": 2725.0,
+      "y2": 533,
+      "width": 1.15
+    },
+    {
+      "x1": 2210.0,
+      "y1": 565,
+      "x2": 2240.0,
+      "y2": 565,
+      "width": 1.8
+    },
+    {
+      "x1": 2225.0,
+      "y1": 597,
+      "x2": 2225.0,
+      "y2": 645,
+      "width": 1.15
+    },
+    {
+      "x1": 2125.0,
+      "y1": 645,
+      "x2": 2325.0,
+      "y2": 645,
+      "width": 1.8
+    },
+    {
+      "x1": 2125.0,
+      "y1": 645,
+      "x2": 2125.0,
+      "y2": 693,
+      "width": 1.15
+    },
+    {
+      "x1": 2325.0,
+      "y1": 645,
+      "x2": 2325.0,
+      "y2": 693,
+      "width": 1.15
+    },
+    {
+      "x1": 2710.0,
+      "y1": 565,
+      "x2": 2740.0,
+      "y2": 565,
+      "width": 1.8
+    },
+    {
+      "x1": 2725.0,
+      "y1": 597,
+      "x2": 2725.0,
+      "y2": 645,
+      "width": 1.15
+    },
+    {
+      "x1": 2525.0,
+      "y1": 645,
+      "x2": 2925.0,
+      "y2": 645,
+      "width": 1.8
+    },
+    {
+      "x1": 2525.0,
+      "y1": 645,
+      "x2": 2525.0,
+      "y2": 693,
+      "width": 1.15
+    },
+    {
+      "x1": 2725.0,
+      "y1": 645,
+      "x2": 2725.0,
+      "y2": 693,
+      "width": 1.15
+    },
+    {
+      "x1": 2925.0,
+      "y1": 645,
+      "x2": 2925.0,
+      "y2": 693,
+      "width": 1.15
+    }
+  ],
+  "labels": []
 }
