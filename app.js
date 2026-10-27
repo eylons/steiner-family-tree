@@ -315,7 +315,7 @@ function selectPerson(id, center, scrollToCard = true) {
     const x = (person.x + person.width / 2) * zoom;
     const y = person.y * zoom;
     viewport.scrollTo({
-      left: Math.max(0, x - viewport.clientWidth / 2),
+      left: Math.max(0, x),
       top: Math.max(0, y - viewport.clientHeight / 2),
       behavior: "smooth",
     });
