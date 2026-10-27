@@ -394,6 +394,23 @@ h2 {
   font-size: 10px;
 }
 
+.thumbnail-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 33px;
+  padding: 0 4px;
+  color: #39413c;
+  font-size: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.thumbnail-toggle input {
+  margin: 0;
+  accent-color: #507161;
+}
+
 .zoom-label {
   min-width: 37px;
   margin-right: 3px;
@@ -553,6 +570,15 @@ h2 {
 
 .tree-person.is-dimmed {
   opacity: 0.62;
+}
+
+.person-avatar {
+  display: none;
+  pointer-events: none;
+}
+
+.family-tree.show-thumbnails .person-avatar {
+  display: inline;
 }
 
 .tree-person:focus-visible {

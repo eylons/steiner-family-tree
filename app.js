@@ -1,5 +1,7 @@
 const SVG_NS = "http://www.w3.org/2000/svg";
 const BASE_ZOOM = 0.7;
+const AVATAR_RADIUS = 28;
+const AVATAR_OFFSET_Y = 12;
 const MIN_ZOOM = 0.35;
 const MAX_ZOOM = 1.8;
 const PERSON_CHART_LINKS = {
@@ -180,6 +182,7 @@ function drawChart(data, photos) {
     "font-size": 14,
   });
   const showPersonCards = layoutData.person_cards === true;
+  const avatarDefs = svgElement("defs");
   for (const person of layoutData.people) {
     const nameWidth = Math.max(8, person.width - (showPersonCards ? 18 : 12));
     const group = svgElement("g", {
@@ -200,6 +203,25 @@ function drawChart(data, photos) {
       class: "person-hit-area",
     });
     group.append(hitArea);
+
+    const thumbnail = photosByPerson[PERSON_CHART_LINKS[person.id]?.canonicalId || person.id]?.[0]?.thumbnail;
+    if (thumbnail) {
+      const clipId = `avatar-${person.id}`;
+      const clip = svgElement("clipPath", { id: clipId });
+      clip.append(svgElement("circle", { cx: person.x, cy: person.y - AVATAR_OFFSET_Y, r: AVATAR_RADIUS }));
+      avatarDefs.append(clip);
+      group.append(svgElement("image", {
+        href: thumbnail,
+        x: person.x - AVATAR_RADIUS,
+        y: person.y - AVATAR_OFFSET_Y - AVATAR_RADIUS,
+        width: AVATAR_RADIUS * 2,
+        height: AVATAR_RADIUS * 2,
+        preserveAspectRatio: "xMidYMid slice",
+        "clip-path": `url(#${clipId})`,
+        class: "person-avatar",
+        "aria-hidden": "true",
+      }));
+    }
 
     const first = svgElement("text", {
       x: person.x + person.width / 2,
@@ -236,7 +258,7 @@ function drawChart(data, photos) {
     });
     peopleGroup.append(group);
   }
-  svg.append(peopleGroup);
+  svg.append(avatarDefs, peopleGroup);
   for (const name of peopleGroup.querySelectorAll(".person-first-name, .person-last-name")) {
     const maxWidth = Number(name.dataset.maxWidth);
     const measuredWidth = name.getComputedTextLength();
@@ -414,6 +436,13 @@ function openPhotograph(button) {
   caption.textContent = button.dataset.alt;
   dialog.showModal();
 }
+
+const showThumbnailsToggle = document.querySelector("#show-thumbnails");
+function syncThumbnailVisibility() {
+  svg.classList.toggle("show-thumbnails", showThumbnailsToggle.checked);
+}
+showThumbnailsToggle.addEventListener("change", syncThumbnailVisibility);
+syncThumbnailVisibility();
 
 document.querySelector("#zoom-in").addEventListener("click", () => setZoom(zoom + 0.15));
 document.querySelector("#zoom-out").addEventListener("click", () => setZoom(zoom - 0.15));

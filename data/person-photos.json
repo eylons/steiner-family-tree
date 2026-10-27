@@ -1045,6 +1045,90 @@
         "src": "assets/person-photos/david-steiner-letter-1967.jpg",
         "thumbnail": "assets/person-photos/thumbnails/david-steiner-letter-1967.jpg"
       }
+    ],
+    "60-7": [
+      {
+        "filename": "Google Photos · Eylon Steiner",
+        "src": "assets/person-photos/google-photos-eylon-steiner.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-eylon-steiner.png"
+      }
+    ],
+    "60-10": [
+      {
+        "filename": "Google Photos · Ofir Steiner",
+        "src": "assets/person-photos/google-photos-ofir-steiner.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-ofir-steiner.png"
+      }
+    ],
+    "60-3": [
+      {
+        "filename": "Google Photos · Idit Neuman",
+        "src": "assets/person-photos/google-photos-idit-neuman.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-idit-neuman.png"
+      }
+    ],
+    "60-14": [
+      {
+        "filename": "Google Photos · Sarit Asael",
+        "src": "assets/person-photos/google-photos-sarit-asael.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-sarit-asael.png"
+      }
+    ],
+    "69-4": [
+      {
+        "filename": "Google Photos · Noam Steiner",
+        "src": "assets/person-photos/google-photos-noam-steiner.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-noam-steiner.png"
+      }
+    ],
+    "69-1": [
+      {
+        "filename": "Google Photos · Shir Steiner",
+        "src": "assets/person-photos/google-photos-shir-steiner.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-shir-steiner.png"
+      }
+    ],
+    "69-10": [
+      {
+        "filename": "Google Photos · Roni Steiner",
+        "src": "assets/person-photos/google-photos-roni-steiner.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-roni-steiner.png"
+      }
+    ],
+    "69-7": [
+      {
+        "filename": "Google Photos · Amir Steiner",
+        "src": "assets/person-photos/google-photos-amir-steiner.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-amir-steiner.png"
+      }
+    ],
+    "69-22": [
+      {
+        "filename": "Google Photos · Amit Haimi",
+        "src": "assets/person-photos/google-photos-amit-haimi.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-amit-haimi.png"
+      }
+    ],
+    "69-25": [
+      {
+        "filename": "Google Photos · Shir Haimi",
+        "src": "assets/person-photos/google-photos-shir-haimi.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-shir-haimi.png"
+      }
+    ],
+    "69-19": [
+      {
+        "filename": "Google Photos · Shaked Haimi",
+        "src": "assets/person-photos/google-photos-shaked-haimi.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-shaked-haimi.png"
+      }
+    ],
+    "69-16": [
+      {
+        "filename": "Google Photos · Eytan Steiner",
+        "src": "assets/person-photos/google-photos-eitan-steiner.png",
+        "thumbnail": "assets/person-photos/thumbnails/google-photos-eitan-steiner.png"
+      }
     ]
   }
 }
