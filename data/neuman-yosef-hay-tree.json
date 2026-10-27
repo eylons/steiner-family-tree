@@ -234,6 +234,90 @@
       "width": 170,
       "font_size": 14,
       "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-simcha-mozes",
+      "name": "Simcha Mozes (Yosef-Hay)",
+      "first_name": "Simcha",
+      "last_name": "Mozes (Yosef-Hay)",
+      "x": 955,
+      "y": 575,
+      "last_name_y": 595,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-esther-daniel",
+      "name": "Esther Daniel (Yosef-Hay)",
+      "first_name": "Esther",
+      "last_name": "Daniel (Yosef-Hay)",
+      "x": 1155,
+      "y": 575,
+      "last_name_y": 595,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-tamar-avarham",
+      "name": "Tamar Avarham (Yosef-Hay)",
+      "first_name": "Tamar",
+      "last_name": "Avarham (Yosef-Hay)",
+      "x": 1355,
+      "y": 575,
+      "last_name_y": 595,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-tova",
+      "name": "Tova Yosef-Hay",
+      "first_name": "Tova",
+      "last_name": "Yosef-Hay",
+      "x": 1555,
+      "y": 575,
+      "last_name_y": 595,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-tzipi-elias",
+      "name": "Tzipi Elias (Yosef-Hay)",
+      "first_name": "Tzipi",
+      "last_name": "Elias (Yosef-Hay)",
+      "x": 1755,
+      "y": 575,
+      "last_name_y": 595,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-nava",
+      "name": "Nava Yosef-Hay",
+      "first_name": "Nava",
+      "last_name": "Yosef-Hay",
+      "x": 1955,
+      "y": 575,
+      "last_name_y": 595,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
+    },
+    {
+      "id": "neuman-ora-gan-bar",
+      "name": "Ora Gan-Bar (Yosef-Hai)",
+      "first_name": "Ora",
+      "last_name": "Gan-Bar (Yosef-Hai)",
+      "x": 2155,
+      "y": 575,
+      "last_name_y": 595,
+      "width": 170,
+      "font_size": 14,
+      "source_label": "Geni chart"
     }
   ],
   "labels": [],
@@ -423,7 +507,7 @@
     {
       "x1": 890,
       "y1": 500,
-      "x2": 1040,
+      "x2": 2240,
       "y2": 500,
       "width": 1.8
     },
@@ -474,6 +558,55 @@
       "y1": 660,
       "x2": 990,
       "y2": 708,
+      "width": 1.15
+    },
+    {
+      "x1": 1040,
+      "y1": 500,
+      "x2": 1040,
+      "y2": 548,
+      "width": 1.15
+    },
+    {
+      "x1": 1240,
+      "y1": 500,
+      "x2": 1240,
+      "y2": 548,
+      "width": 1.15
+    },
+    {
+      "x1": 1440,
+      "y1": 500,
+      "x2": 1440,
+      "y2": 548,
+      "width": 1.15
+    },
+    {
+      "x1": 1640,
+      "y1": 500,
+      "x2": 1640,
+      "y2": 548,
+      "width": 1.15
+    },
+    {
+      "x1": 1840,
+      "y1": 500,
+      "x2": 1840,
+      "y2": 548,
+      "width": 1.15
+    },
+    {
+      "x1": 2040,
+      "y1": 500,
+      "x2": 2040,
+      "y2": 548,
+      "width": 1.15
+    },
+    {
+      "x1": 2240,
+      "y1": 500,
+      "x2": 2240,
+      "y2": 548,
       "width": 1.15
     }
   ]

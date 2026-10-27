@@ -1012,14 +1012,9 @@
     ],
     "50-21": [
       {
-        "filename": "David Steiner tractor.png",
-        "src": "assets/person-photos/david-steiner-tractor.png",
-        "thumbnail": "assets/person-photos/thumbnails/david-steiner-tractor.png"
-      },
-      {
-        "filename": "David Steiner letter 1967.jpg",
-        "src": "assets/person-photos/david-steiner-letter-1967.jpg",
-        "thumbnail": "assets/person-photos/thumbnails/david-steiner-letter-1967.jpg"
+        "filename": "David Steiner",
+        "src": "assets/person-photos/david-steiner-portrait.png",
+        "thumbnail": "assets/person-photos/thumbnails/david-steiner-portrait.png"
       }
     ],
     "60-7": [
@@ -1132,6 +1127,41 @@
         "filename": "Google Photos · Yariv Neuman",
         "src": "assets/person-photos/google-photos-yariv-neuman.png",
         "thumbnail": "assets/person-photos/thumbnails/google-photos-yariv-neuman.png"
+      }
+    ],
+    "69-13": [
+      {
+        "filename": "Ori-yael Steiner",
+        "src": "assets/person-photos/ori-yael-steiner-face.png",
+        "thumbnail": "assets/person-photos/thumbnails/ori-yael-steiner-face.png"
+      }
+    ],
+    "41-11": [
+      {
+        "filename": "Shlomo Feigin (Geni)",
+        "src": "assets/person-photos/geni-shlomo-feigin.png",
+        "thumbnail": "assets/person-photos/thumbnails/geni-shlomo-feigin.png"
+      }
+    ],
+    "neuman-david-2": [
+      {
+        "filename": "Geni chart · David Neuman (1945)",
+        "src": "assets/person-photos/neuman-david-1945.png",
+        "thumbnail": "assets/person-photos/thumbnails/neuman-david-1945.png"
+      }
+    ],
+    "neuman-rivka": [
+      {
+        "filename": "Geni chart · Rivka Neuman (Yosef-Hay)",
+        "src": "assets/person-photos/neuman-rivka.png",
+        "thumbnail": "assets/person-photos/thumbnails/neuman-rivka.png"
+      }
+    ],
+    "neuman-emma-rosenthal": [
+      {
+        "filename": "Geni chart · Emma Rosenthal (Roth)",
+        "src": "assets/person-photos/neuman-emma-rosenthal.png",
+        "thumbnail": "assets/person-photos/thumbnails/neuman-emma-rosenthal.png"
       }
     ]
   }

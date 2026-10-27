@@ -591,7 +591,7 @@ Promise.all([
   fetch("data/person-photos.json", { cache: "no-cache" }),
   fetch("data/person-profiles.json?v=idit-neuman-chart-1"),
   fetch("data/feigin-branch.json?v=feigin-buerger-1"),
-  fetch("data/neuman-yosef-hay-tree.json?v=neuman-tree-3"),
+  fetch("data/neuman-yosef-hay-tree.json?v=neuman-tree-4"),
 ])
   .then(async ([treeResponse, moreSteinerResponse, steinerListResponse, photosResponse, profilesResponse, feiginResponse, neumanResponse]) => {
     if (!treeResponse.ok) throw new Error(`Could not load family chart data (${treeResponse.status}).`);
