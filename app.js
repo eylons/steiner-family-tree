@@ -591,7 +591,7 @@ Promise.all([
   fetch("data/more-steiners-tree.json"),
   fetch("data/steiner-list-tree.json"),
   fetch("data/person-photos.json", { cache: "no-cache" }),
-  fetch("data/person-profiles.json?v=idit-neuman-chart-1"),
+  fetch("data/person-profiles.json?v=david-documents-2"),
   fetch("data/feigin-branch.json?v=feigin-buerger-5"),
   fetch("data/neuman-yosef-hay-tree.json?v=neuman-tree-8"),
   fetch("data/neuman-david-tree.json?v=neuman-david-4"),
