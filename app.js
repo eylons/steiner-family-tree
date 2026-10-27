@@ -57,6 +57,7 @@ let moreSteinerTreeData;
 let steinerListTreeData;
 let feiginTreeData;
 let neumanTreeData;
+let davidNeumanTreeData;
 let mainPhotosByPerson = {};
 let photosByPerson = {};
 let profilesByPerson = {};
@@ -472,6 +473,7 @@ function showTreeView(treeId, selectedId = null) {
     "steiner-list": steinerListTreeData,
     feigin: feiginTreeData,
     "neuman-yosef-hay": neumanTreeData,
+    "david-neuman": davidNeumanTreeData,
   }[treeId];
   const photos = mainPhotosByPerson;
   drawChart(viewData, photos);
@@ -591,9 +593,10 @@ Promise.all([
   fetch("data/person-photos.json", { cache: "no-cache" }),
   fetch("data/person-profiles.json?v=idit-neuman-chart-1"),
   fetch("data/feigin-branch.json?v=feigin-buerger-1"),
-  fetch("data/neuman-yosef-hay-tree.json?v=neuman-tree-4"),
+  fetch("data/neuman-yosef-hay-tree.json?v=neuman-tree-6"),
+  fetch("data/neuman-david-tree.json?v=neuman-david-2"),
 ])
-  .then(async ([treeResponse, moreSteinerResponse, steinerListResponse, photosResponse, profilesResponse, feiginResponse, neumanResponse]) => {
+  .then(async ([treeResponse, moreSteinerResponse, steinerListResponse, photosResponse, profilesResponse, feiginResponse, neumanResponse, davidNeumanResponse]) => {
     if (!treeResponse.ok) throw new Error(`Could not load family chart data (${treeResponse.status}).`);
     if (!moreSteinerResponse.ok) throw new Error(`Could not load the additional Steiner chart (${moreSteinerResponse.status}).`);
     if (!steinerListResponse.ok) throw new Error(`Could not load the numbered Steiner list (${steinerListResponse.status}).`);
@@ -601,7 +604,7 @@ Promise.all([
     if (!profilesResponse.ok) throw new Error(`Could not load sourced family details (${profilesResponse.status}).`);
     if (!feiginResponse.ok) throw new Error(`Could not load the Feigin family branch (${feiginResponse.status}).`);
     if (!neumanResponse.ok) throw new Error(`Could not load the Neuman-Yosef-Hay family tree (${neumanResponse.status}).`);
-    const [tree, moreSteinerTree, steinerListTree, photoData, profileData, feiginTree, neumanTree] = await Promise.all([
+    const [tree, moreSteinerTree, steinerListTree, photoData, profileData, feiginTree, neumanTree, davidNeumanTree] = await Promise.all([
       treeResponse.json(),
       moreSteinerResponse.json(),
       steinerListResponse.json(),
@@ -609,8 +612,10 @@ Promise.all([
       profilesResponse.json(),
       feiginResponse.json(),
       neumanResponse.json(),
+      davidNeumanResponse.json(),
     ]);
     neumanTreeData = neumanTree;
+    davidNeumanTreeData = davidNeumanTree;
     mainTreeData = tree;
     moreSteinerTreeData = moreSteinerTree;
     steinerListTreeData = steinerListTree;

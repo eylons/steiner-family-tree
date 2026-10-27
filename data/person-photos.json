@@ -1163,6 +1163,34 @@
         "src": "assets/person-photos/neuman-emma-rosenthal.png",
         "thumbnail": "assets/person-photos/thumbnails/neuman-emma-rosenthal.png"
       }
+    ],
+    "neuman-moran": [
+      {
+        "filename": "Geni chart · Moran Neuman Ayalon",
+        "src": "assets/person-photos/yosef-hay-moran.png",
+        "thumbnail": "assets/person-photos/thumbnails/yosef-hay-moran.png"
+      }
+    ],
+    "neuman-sebastian": [
+      {
+        "filename": "Geni chart · Sebastian Ariel Ayalon",
+        "src": "assets/person-photos/yosef-hay-sebastian.png",
+        "thumbnail": "assets/person-photos/thumbnails/yosef-hay-sebastian.png"
+      }
+    ],
+    "neuman-tomer": [
+      {
+        "filename": "Geni chart · Tomer Ayalon",
+        "src": "assets/person-photos/yosef-hay-tomer.png",
+        "thumbnail": "assets/person-photos/thumbnails/yosef-hay-tomer.png"
+      }
+    ],
+    "neuman-stav": [
+      {
+        "filename": "Geni chart · Stav Ayalon",
+        "src": "assets/person-photos/yosef-hay-stav.png",
+        "thumbnail": "assets/person-photos/thumbnails/yosef-hay-stav.png"
+      }
     ]
   }
 }
